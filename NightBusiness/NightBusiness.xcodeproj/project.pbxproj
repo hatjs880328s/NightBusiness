@@ -18,9 +18,13 @@
 		56C369B724AC707100770439 /* NightBusinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369B624AC707100770439 /* NightBusinessUITests.swift */; };
 		56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369CD24AC728500770439 /* PersonCenterVM.swift */; };
 		56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369CF24AC728500770439 /* PersonCenterViewController.swift */; };
-		56C369D424AC728500770439 /* emptyvw in Resources */ = {isa = PBXBuildFile; fileRef = 56C369D124AC728500770439 /* emptyvw */; };
 		56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */; };
 		56C369D824AC738D00770439 /* IHTUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369D724AC738D00770439 /* IHTUIConfig.swift */; };
+		56DCADD424AC7C6C00D8E69E /* NBPersonCenterVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCADD324AC7C6C00D8E69E /* NBPersonCenterVModel.swift */; };
+		56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCADD524AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift */; };
+		56DCADD824AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DCADD624AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib */; };
+		56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCADD924AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift */; };
+		56DCADDC24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DCADDA24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +62,13 @@
 		56C369B824AC707100770439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C369CD24AC728500770439 /* PersonCenterVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterVM.swift; sourceTree = "<group>"; };
 		56C369CF24AC728500770439 /* PersonCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterViewController.swift; sourceTree = "<group>"; };
-		56C369D124AC728500770439 /* emptyvw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emptyvw; sourceTree = "<group>"; };
 		56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTBaseSwiftViewController.swift; sourceTree = "<group>"; };
 		56C369D724AC738D00770439 /* IHTUIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTUIConfig.swift; sourceTree = "<group>"; };
+		56DCADD324AC7C6C00D8E69E /* NBPersonCenterVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersonCenterVModel.swift; sourceTree = "<group>"; };
+		56DCADD524AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersonCenterUserTableViewCell.swift; sourceTree = "<group>"; };
+		56DCADD624AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersonCenterUserTableViewCell.xib; sourceTree = "<group>"; };
+		56DCADD924AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersonCenterGroupTableViewCell.swift; sourceTree = "<group>"; };
+		56DCADDA24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersonCenterGroupTableViewCell.xib; sourceTree = "<group>"; };
 		8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.release.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NightBusiness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				56C369CD24AC728500770439 /* PersonCenterVM.swift */,
+				56DCADD324AC7C6C00D8E69E /* NBPersonCenterVModel.swift */,
 			);
 			path = PersonCenterModule_VM;
 			sourceTree = "<group>";
@@ -216,7 +225,10 @@
 		56C369D024AC728500770439 /* PersonCenterModule_V */ = {
 			isa = PBXGroup;
 			children = (
-				56C369D124AC728500770439 /* emptyvw */,
+				56DCADD524AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift */,
+				56DCADD624AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib */,
+				56DCADD924AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift */,
+				56DCADDA24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib */,
 			);
 			path = PersonCenterModule_V;
 			sourceTree = "<group>";
@@ -311,6 +323,7 @@
 		56C3698924AC706F00770439 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NB;
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = SWZ;
@@ -355,8 +368,9 @@
 			files = (
 				56C369A124AC707100770439 /* LaunchScreen.storyboard in Resources */,
 				56C3699E24AC707100770439 /* Assets.xcassets in Resources */,
+				56DCADD824AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib in Resources */,
+				56DCADDC24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib in Resources */,
 				56C3699C24AC706F00770439 /* Main.storyboard in Resources */,
-				56C369D424AC728500770439 /* emptyvw in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +441,10 @@
 				56C3699924AC706F00770439 /* ViewController.swift in Sources */,
 				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,
 				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
+				56DCADD424AC7C6C00D8E69E /* NBPersonCenterVModel.swift in Sources */,
 				56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */,
+				56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */,
+				56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */,
 				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,
 				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
 			);

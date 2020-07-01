@@ -36,7 +36,9 @@ public class PersonCenterVM: NSObject {
 
 /// MAKR: - API PROGRESS
 extension PersonCenterVM {
+    func initData() {
 
+    }
 }
 
 /// MAKR: - OTHERS PROGRESS

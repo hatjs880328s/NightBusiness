@@ -12,8 +12,11 @@
 
 
 import Foundation
+import UIKit
 
 class PersonCenterController: IHTBaseSwiftViewController {
+
+    var tab: UITableView = UITableView(frame: CGRect.zero, style: UITableView.Style.grouped)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +41,12 @@ class PersonCenterController: IHTBaseSwiftViewController {
 extension PersonCenterController {
 
     func initVw() {
-
+        self.view.addSubview(self.tab)
+        self.tab.snp.makeConstraints { (make) in
+            make.left.right.top.bottom.equalTo(0)
+        }
+        self.tab.delegate = self
+        self.tab.dataSource = self
     }
 
 }
@@ -50,4 +58,26 @@ extension PersonCenterController {
 
     }
 
+}
+
+extension PersonCenterController: UITableViewDelegate, UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let cell = NBPersonCenterUserTableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "one")
+            cell.setData(name: "Milition Figueroa", enterprise: "云研发中心", img: "mainpage_firstcell_bg")
+
+            return cell
+        }
+
+        return UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "two")
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 }
