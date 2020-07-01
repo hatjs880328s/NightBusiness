@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,11 @@
 		56C369A124AC707100770439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C3699F24AC707100770439 /* LaunchScreen.storyboard */; };
 		56C369AC24AC707100770439 /* NightBusinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369AB24AC707100770439 /* NightBusinessTests.swift */; };
 		56C369B724AC707100770439 /* NightBusinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369B624AC707100770439 /* NightBusinessUITests.swift */; };
+		56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369CD24AC728500770439 /* PersonCenterVM.swift */; };
+		56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369CF24AC728500770439 /* PersonCenterViewController.swift */; };
+		56C369D424AC728500770439 /* emptyvw in Resources */ = {isa = PBXBuildFile; fileRef = 56C369D124AC728500770439 /* emptyvw */; };
+		56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */; };
+		56C369D824AC738D00770439 /* IHTUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369D724AC738D00770439 /* IHTUIConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		56C369B224AC707100770439 /* NightBusinessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightBusinessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C369B624AC707100770439 /* NightBusinessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightBusinessUITests.swift; sourceTree = "<group>"; };
 		56C369B824AC707100770439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C369CD24AC728500770439 /* PersonCenterVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterVM.swift; sourceTree = "<group>"; };
+		56C369CF24AC728500770439 /* PersonCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterViewController.swift; sourceTree = "<group>"; };
+		56C369D124AC728500770439 /* emptyvw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emptyvw; sourceTree = "<group>"; };
+		56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTBaseSwiftViewController.swift; sourceTree = "<group>"; };
+		56C369D724AC738D00770439 /* IHTUIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTUIConfig.swift; sourceTree = "<group>"; };
 		8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.release.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NightBusiness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +116,11 @@
 		56C3699324AC706F00770439 /* NightBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				56C369C824AC726900770439 /* UTI */,
+				56C369C724AC726500770439 /* MODEL */,
+				56C369C624AC725F00770439 /* USL */,
+				56C369C524AC725A00770439 /* BLL */,
+				56C369C424AC725500770439 /* DAL */,
 				56C3699424AC706F00770439 /* AppDelegate.swift */,
 				56C3699624AC706F00770439 /* SceneDelegate.swift */,
 				56C3699824AC706F00770439 /* ViewController.swift */,
@@ -135,6 +150,86 @@
 			path = NightBusinessUITests;
 			sourceTree = "<group>";
 		};
+		56C369C424AC725500770439 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		56C369C524AC725A00770439 /* BLL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BLL;
+			sourceTree = "<group>";
+		};
+		56C369C624AC725F00770439 /* USL */ = {
+			isa = PBXGroup;
+			children = (
+				56C369CB24AC728500770439 /* PersonCenterModule */,
+			);
+			path = USL;
+			sourceTree = "<group>";
+		};
+		56C369C724AC726500770439 /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
+		56C369C824AC726900770439 /* UTI */ = {
+			isa = PBXGroup;
+			children = (
+				56C369D924AC73D400770439 /* UIUti */,
+			);
+			path = UTI;
+			sourceTree = "<group>";
+		};
+		56C369CB24AC728500770439 /* PersonCenterModule */ = {
+			isa = PBXGroup;
+			children = (
+				56C369CC24AC728500770439 /* PersonCenterModule_VM */,
+				56C369CE24AC728500770439 /* PersonCenterModule_C */,
+				56C369D024AC728500770439 /* PersonCenterModule_V */,
+			);
+			path = PersonCenterModule;
+			sourceTree = "<group>";
+		};
+		56C369CC24AC728500770439 /* PersonCenterModule_VM */ = {
+			isa = PBXGroup;
+			children = (
+				56C369CD24AC728500770439 /* PersonCenterVM.swift */,
+			);
+			path = PersonCenterModule_VM;
+			sourceTree = "<group>";
+		};
+		56C369CE24AC728500770439 /* PersonCenterModule_C */ = {
+			isa = PBXGroup;
+			children = (
+				56C369CF24AC728500770439 /* PersonCenterViewController.swift */,
+			);
+			path = PersonCenterModule_C;
+			sourceTree = "<group>";
+		};
+		56C369D024AC728500770439 /* PersonCenterModule_V */ = {
+			isa = PBXGroup;
+			children = (
+				56C369D124AC728500770439 /* emptyvw */,
+			);
+			path = PersonCenterModule_V;
+			sourceTree = "<group>";
+		};
+		56C369D924AC73D400770439 /* UIUti */ = {
+			isa = PBXGroup;
+			children = (
+				56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */,
+				56C369D724AC738D00770439 /* IHTUIConfig.swift */,
+			);
+			path = UIUti;
+			sourceTree = "<group>";
+		};
 		74F6F8DC50AF51241DF5B366 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +244,6 @@
 				2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */,
 				8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -262,6 +356,7 @@
 				56C369A124AC707100770439 /* LaunchScreen.storyboard in Resources */,
 				56C3699E24AC707100770439 /* Assets.xcassets in Resources */,
 				56C3699C24AC706F00770439 /* Main.storyboard in Resources */,
+				56C369D424AC728500770439 /* emptyvw in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C369D824AC738D00770439 /* IHTUIConfig.swift in Sources */,
 				56C3699924AC706F00770439 /* ViewController.swift in Sources */,
+				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,
 				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
+				56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */,
+				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,
 				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
