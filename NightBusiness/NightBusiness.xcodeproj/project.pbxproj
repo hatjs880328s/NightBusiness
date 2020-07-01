@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D5B98B5C6C66D716D4DB96A /* libPods-NightBusiness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */; };
+		56C3699524AC706F00770439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699424AC706F00770439 /* AppDelegate.swift */; };
+		56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699624AC706F00770439 /* SceneDelegate.swift */; };
+		56C3699924AC706F00770439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699824AC706F00770439 /* ViewController.swift */; };
+		56C3699C24AC706F00770439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C3699A24AC706F00770439 /* Main.storyboard */; };
+		56C3699E24AC707100770439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C3699D24AC707100770439 /* Assets.xcassets */; };
+		56C369A124AC707100770439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C3699F24AC707100770439 /* LaunchScreen.storyboard */; };
+		56C369AC24AC707100770439 /* NightBusinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369AB24AC707100770439 /* NightBusinessTests.swift */; };
+		56C369B724AC707100770439 /* NightBusinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369B624AC707100770439 /* NightBusinessUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56C369A824AC707100770439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C3698924AC706F00770439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C3699024AC706F00770439;
+			remoteInfo = NightBusiness;
+		};
+		56C369B324AC707100770439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C3698924AC706F00770439 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C3699024AC706F00770439;
+			remoteInfo = NightBusiness;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.debug.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		56C3699124AC706F00770439 /* NightBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C3699424AC706F00770439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56C3699624AC706F00770439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		56C3699824AC706F00770439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56C3699B24AC706F00770439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56C3699D24AC707100770439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56C369A024AC707100770439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56C369A224AC707100770439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C369A724AC707100770439 /* NightBusinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightBusinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C369AB24AC707100770439 /* NightBusinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightBusinessTests.swift; sourceTree = "<group>"; };
+		56C369AD24AC707100770439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C369B224AC707100770439 /* NightBusinessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightBusinessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C369B624AC707100770439 /* NightBusinessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightBusinessUITests.swift; sourceTree = "<group>"; };
+		56C369B824AC707100770439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.release.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.release.xcconfig"; sourceTree = "<group>"; };
+		B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NightBusiness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56C3698E24AC706F00770439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5B98B5C6C66D716D4DB96A /* libPods-NightBusiness.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C369A424AC707100770439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C369AF24AC707100770439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56C3698824AC706F00770439 = {
+			isa = PBXGroup;
+			children = (
+				56C3699324AC706F00770439 /* NightBusiness */,
+				56C369AA24AC707100770439 /* NightBusinessTests */,
+				56C369B524AC707100770439 /* NightBusinessUITests */,
+				56C3699224AC706F00770439 /* Products */,
+				C8C94A373546EDD3055F426A /* Pods */,
+				74F6F8DC50AF51241DF5B366 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56C3699224AC706F00770439 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56C3699124AC706F00770439 /* NightBusiness.app */,
+				56C369A724AC707100770439 /* NightBusinessTests.xctest */,
+				56C369B224AC707100770439 /* NightBusinessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56C3699324AC706F00770439 /* NightBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				56C3699424AC706F00770439 /* AppDelegate.swift */,
+				56C3699624AC706F00770439 /* SceneDelegate.swift */,
+				56C3699824AC706F00770439 /* ViewController.swift */,
+				56C3699A24AC706F00770439 /* Main.storyboard */,
+				56C3699D24AC707100770439 /* Assets.xcassets */,
+				56C3699F24AC707100770439 /* LaunchScreen.storyboard */,
+				56C369A224AC707100770439 /* Info.plist */,
+			);
+			path = NightBusiness;
+			sourceTree = "<group>";
+		};
+		56C369AA24AC707100770439 /* NightBusinessTests */ = {
+			isa = PBXGroup;
+			children = (
+				56C369AB24AC707100770439 /* NightBusinessTests.swift */,
+				56C369AD24AC707100770439 /* Info.plist */,
+			);
+			path = NightBusinessTests;
+			sourceTree = "<group>";
+		};
+		56C369B524AC707100770439 /* NightBusinessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56C369B624AC707100770439 /* NightBusinessUITests.swift */,
+				56C369B824AC707100770439 /* Info.plist */,
+			);
+			path = NightBusinessUITests;
+			sourceTree = "<group>";
+		};
+		74F6F8DC50AF51241DF5B366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8C94A373546EDD3055F426A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */,
+				8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56C3699024AC706F00770439 /* NightBusiness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C369BB24AC707100770439 /* Build configuration list for PBXNativeTarget "NightBusiness" */;
+			buildPhases = (
+				A43AF2E1EE1025203ABDF12A /* [CP] Check Pods Manifest.lock */,
+				56C3698D24AC706F00770439 /* Sources */,
+				56C3698E24AC706F00770439 /* Frameworks */,
+				56C3698F24AC706F00770439 /* Resources */,
+				64088F01D53B149C39CF9B82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NightBusiness;
+			productName = NightBusiness;
+			productReference = 56C3699124AC706F00770439 /* NightBusiness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56C369A624AC707100770439 /* NightBusinessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C369BE24AC707100770439 /* Build configuration list for PBXNativeTarget "NightBusinessTests" */;
+			buildPhases = (
+				56C369A324AC707100770439 /* Sources */,
+				56C369A424AC707100770439 /* Frameworks */,
+				56C369A524AC707100770439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C369A924AC707100770439 /* PBXTargetDependency */,
+			);
+			name = NightBusinessTests;
+			productName = NightBusinessTests;
+			productReference = 56C369A724AC707100770439 /* NightBusinessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56C369B124AC707100770439 /* NightBusinessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C369C124AC707100770439 /* Build configuration list for PBXNativeTarget "NightBusinessUITests" */;
+			buildPhases = (
+				56C369AE24AC707100770439 /* Sources */,
+				56C369AF24AC707100770439 /* Frameworks */,
+				56C369B024AC707100770439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C369B424AC707100770439 /* PBXTargetDependency */,
+			);
+			name = NightBusinessUITests;
+			productName = NightBusinessUITests;
+			productReference = 56C369B224AC707100770439 /* NightBusinessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56C3698924AC706F00770439 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = SWZ;
+				TargetAttributes = {
+					56C3699024AC706F00770439 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					56C369A624AC707100770439 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 56C3699024AC706F00770439;
+					};
+					56C369B124AC707100770439 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 56C3699024AC706F00770439;
+					};
+				};
+			};
+			buildConfigurationList = 56C3698C24AC706F00770439 /* Build configuration list for PBXProject "NightBusiness" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56C3698824AC706F00770439;
+			productRefGroup = 56C3699224AC706F00770439 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56C3699024AC706F00770439 /* NightBusiness */,
+				56C369A624AC707100770439 /* NightBusinessTests */,
+				56C369B124AC707100770439 /* NightBusinessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56C3698F24AC706F00770439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C369A124AC707100770439 /* LaunchScreen.storyboard in Resources */,
+				56C3699E24AC707100770439 /* Assets.xcassets in Resources */,
+				56C3699C24AC706F00770439 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C369A524AC707100770439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C369B024AC707100770439 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64088F01D53B149C39CF9B82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NightBusiness/Pods-NightBusiness-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NightBusiness/Pods-NightBusiness-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NightBusiness/Pods-NightBusiness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43AF2E1EE1025203ABDF12A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NightBusiness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56C3698D24AC706F00770439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C3699924AC706F00770439 /* ViewController.swift in Sources */,
+				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
+				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C369A324AC707100770439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C369AC24AC707100770439 /* NightBusinessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C369AE24AC707100770439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C369B724AC707100770439 /* NightBusinessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56C369A924AC707100770439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56C3699024AC706F00770439 /* NightBusiness */;
+			targetProxy = 56C369A824AC707100770439 /* PBXContainerItemProxy */;
+		};
+		56C369B424AC707100770439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56C3699024AC706F00770439 /* NightBusiness */;
+			targetProxy = 56C369B324AC707100770439 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56C3699A24AC706F00770439 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56C3699B24AC706F00770439 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56C3699F24AC707100770439 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56C369A024AC707100770439 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56C369B924AC707100770439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56C369BA24AC707100770439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56C369BC24AC707100770439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVGL8H4887;
+				INFOPLIST_FILE = NightBusiness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusiness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56C369BD24AC707100770439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVGL8H4887;
+				INFOPLIST_FILE = NightBusiness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusiness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56C369BF24AC707100770439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVGL8H4887;
+				INFOPLIST_FILE = NightBusinessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusinessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightBusiness.app/NightBusiness";
+			};
+			name = Debug;
+		};
+		56C369C024AC707100770439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVGL8H4887;
+				INFOPLIST_FILE = NightBusinessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusinessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightBusiness.app/NightBusiness";
+			};
+			name = Release;
+		};
+		56C369C224AC707100770439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVGL8H4887;
+				INFOPLIST_FILE = NightBusinessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusinessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NightBusiness;
+			};
+			name = Debug;
+		};
+		56C369C324AC707100770439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NVGL8H4887;
+				INFOPLIST_FILE = NightBusinessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusinessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NightBusiness;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56C3698C24AC706F00770439 /* Build configuration list for PBXProject "NightBusiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C369B924AC707100770439 /* Debug */,
+				56C369BA24AC707100770439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C369BB24AC707100770439 /* Build configuration list for PBXNativeTarget "NightBusiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C369BC24AC707100770439 /* Debug */,
+				56C369BD24AC707100770439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C369BE24AC707100770439 /* Build configuration list for PBXNativeTarget "NightBusinessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C369BF24AC707100770439 /* Debug */,
+				56C369C024AC707100770439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C369C124AC707100770439 /* Build configuration list for PBXNativeTarget "NightBusinessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C369C224AC707100770439 /* Debug */,
+				56C369C324AC707100770439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56C3698924AC706F00770439 /* Project object */;
+}
