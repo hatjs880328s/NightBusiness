@@ -47,6 +47,9 @@ extension PersonCenterController {
         }
         self.tab.delegate = self
         self.tab.dataSource = self
+
+        self.tab.estimatedSectionHeaderHeight = 0
+        self.tab.estimatedSectionFooterHeight = 0
     }
 
 }
@@ -64,7 +67,9 @@ extension PersonCenterController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = NBPersonCenterUserTableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "one")
+            guard let cell = Bundle.main.loadNibNamed("NBPersonCenterUserTableViewCell", owner: self, options: nil)?.first as? NBPersonCenterUserTableViewCell else {
+                return UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "two")
+            }
             cell.setData(name: "Milition Figueroa", enterprise: "云研发中心", img: "mainpage_firstcell_bg")
 
             return cell
@@ -73,11 +78,23 @@ extension PersonCenterController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "two")
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10
     }
 }

@@ -25,6 +25,7 @@
 		56DCADD824AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DCADD624AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib */; };
 		56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCADD924AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift */; };
 		56DCADDC24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DCADDA24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib */; };
+		56DCADDF24AC8B0200D8E69E /* NBBizConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCADDE24AC8B0200D8E69E /* NBBizConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		56DCADD624AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersonCenterUserTableViewCell.xib; sourceTree = "<group>"; };
 		56DCADD924AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersonCenterGroupTableViewCell.swift; sourceTree = "<group>"; };
 		56DCADDA24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersonCenterGroupTableViewCell.xib; sourceTree = "<group>"; };
+		56DCADDE24AC8B0200D8E69E /* NBBizConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBBizConfig.swift; sourceTree = "<group>"; };
 		8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.release.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NightBusiness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 		56C369C824AC726900770439 /* UTI */ = {
 			isa = PBXGroup;
 			children = (
+				56DCADDD24AC8AF200D8E69E /* BizUti */,
 				56C369D924AC73D400770439 /* UIUti */,
 			);
 			path = UTI;
@@ -240,6 +243,14 @@
 				56C369D724AC738D00770439 /* IHTUIConfig.swift */,
 			);
 			path = UIUti;
+			sourceTree = "<group>";
+		};
+		56DCADDD24AC8AF200D8E69E /* BizUti */ = {
+			isa = PBXGroup;
+			children = (
+				56DCADDE24AC8B0200D8E69E /* NBBizConfig.swift */,
+			);
+			path = BizUti;
 			sourceTree = "<group>";
 		};
 		74F6F8DC50AF51241DF5B366 /* Frameworks */ = {
@@ -437,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DCADDF24AC8B0200D8E69E /* NBBizConfig.swift in Sources */,
 				56C369D824AC738D00770439 /* IHTUIConfig.swift in Sources */,
 				56C3699924AC706F00770439 /* ViewController.swift in Sources */,
 				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,

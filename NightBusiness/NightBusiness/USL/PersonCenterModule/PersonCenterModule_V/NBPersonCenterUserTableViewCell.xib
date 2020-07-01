@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="510" height="170"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JN6-Kc-hel">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JN6-Kc-hel">
                         <rect key="frame" x="11" y="105" width="54" height="54"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="54" id="Bqj-XB-axd"/>
@@ -45,16 +45,16 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtE-jL-BF6">
                         <rect key="frame" x="429" y="15" width="65" height="30"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-HU-Ono">
-                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainpage_firstcell_setting" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-HU-Ono">
+                                <rect key="frame" x="5" y="5.5" width="19" height="19"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="RUe-DD-4vx"/>
-                                    <constraint firstAttribute="height" constant="20" id="tox-KV-jPj"/>
+                                    <constraint firstAttribute="width" constant="19" id="RUe-DD-4vx"/>
+                                    <constraint firstAttribute="height" constant="19" id="tox-KV-jPj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0o-cb-d6K">
-                                <rect key="frame" x="26" y="7" width="36" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0o-cb-d6K">
+                                <rect key="frame" x="27" y="8" width="35" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -68,7 +68,7 @@
                             <constraint firstAttribute="width" constant="65" id="GMe-Jw-xbG"/>
                             <constraint firstItem="ZgN-HU-Ono" firstAttribute="leading" secondItem="TtE-jL-BF6" secondAttribute="leading" constant="5" id="Gwm-cN-UPZ"/>
                             <constraint firstAttribute="trailing" secondItem="C0o-cb-d6K" secondAttribute="trailing" constant="3" id="TBQ-Tn-63O"/>
-                            <constraint firstItem="C0o-cb-d6K" firstAttribute="leading" secondItem="ZgN-HU-Ono" secondAttribute="trailing" constant="1" id="pZB-t2-mbN"/>
+                            <constraint firstItem="C0o-cb-d6K" firstAttribute="leading" secondItem="ZgN-HU-Ono" secondAttribute="trailing" constant="3" id="pZB-t2-mbN"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -101,5 +101,6 @@
     </objects>
     <resources>
         <image name="mainpage_arrow" width="8" height="13"/>
+        <image name="mainpage_firstcell_setting" width="19" height="18"/>
     </resources>
 </document>

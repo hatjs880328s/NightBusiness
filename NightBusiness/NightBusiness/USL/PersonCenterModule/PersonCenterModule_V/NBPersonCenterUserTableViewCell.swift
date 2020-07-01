@@ -56,14 +56,14 @@ class NBPersonCenterUserTableViewCell: UITableViewCell {
 
         self.settingLb.textColor = IHTUIConfig.whiteColor
 
-        self.topBg.layer.cornerRadius = 4
+        self.topBg.layer.cornerRadius = 15
 
         self.topBg.layer.masksToBounds = true
 
     }
 
     func setData(name: String, enterprise: String, img: String) {
-
+        
         self.userImg.image = UIImage(named: img)
 
         self.userNameLb.text = name
