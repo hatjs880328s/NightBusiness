@@ -16,7 +16,7 @@ import Foundation
 public class PersonCenterVM: NSObject {
 
     /// DATA
-    var dataSource: [NSObject] = [] {
+    var dataSource: [[(String, String)]] = [] {
         didSet {
             self.reloadAction?(dataSource.count == 0)
         }
@@ -27,6 +27,17 @@ public class PersonCenterVM: NSObject {
 
     override init() {
         super.init()
+
+        dataSource = [
+           [("", ""),
+            ("", ""),
+            ("面对面", "mainpage_normal_face2face"),
+            ("攻略", "mainpage_normal_book")],
+
+           [("绑定(创建)外部团队", "mainpage_normal_share")],
+
+           [("退出", "")]
+        ]
     }
 
     deinit {
@@ -36,9 +47,7 @@ public class PersonCenterVM: NSObject {
 
 /// MAKR: - API PROGRESS
 extension PersonCenterVM {
-    func initData() {
 
-    }
 }
 
 /// MAKR: - OTHERS PROGRESS

@@ -28,9 +28,12 @@ class NBPersonCenterUserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userEnterprise: UILabel!
 
+    @IBOutlet weak var topCon: NSLayoutConstraint!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         self.initVw()
+        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -50,6 +53,10 @@ class NBPersonCenterUserTableViewCell: UITableViewCell {
 
         self.userImg.layer.masksToBounds = true
 
+        self.userImg.layer.borderColor = IHTUIConfig.whiteColor.cgColor
+
+        self.userImg.layer.borderWidth = 1
+
         self.userNameLb.textColor = IHTUIConfig.whiteColor
 
         self.userEnterprise.textColor = IHTUIConfig.whiteColor
@@ -60,6 +67,9 @@ class NBPersonCenterUserTableViewCell: UITableViewCell {
 
         self.topBg.layer.masksToBounds = true
 
+        topCon.constant += (IHTUIConfig.isIphoneX ? 44 : 20)
+
+        self.userNameLb.font = UIFont.systemFont(ofSize: IHTUIConfig.naviBarTitleFont.pointSize, weight: UIFont.Weight.bold)
     }
 
     func setData(name: String, enterprise: String, img: String) {

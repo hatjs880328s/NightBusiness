@@ -92,6 +92,7 @@
                 <outlet property="settingImg" destination="ZgN-HU-Ono" id="Nvt-Xz-rAA"/>
                 <outlet property="settingLb" destination="C0o-cb-d6K" id="62l-Y1-ty0"/>
                 <outlet property="topBg" destination="TtE-jL-BF6" id="IRN-OR-tHw"/>
+                <outlet property="topCon" destination="aEM-US-82b" id="ce8-Yv-HMX"/>
                 <outlet property="userEnterprise" destination="QGt-G9-4Lk" id="qk2-Uo-y4Z"/>
                 <outlet property="userImg" destination="JN6-Kc-hel" id="p3O-or-QFG"/>
                 <outlet property="userNameLb" destination="137-8e-5bX" id="zKq-RC-Nxd"/>
