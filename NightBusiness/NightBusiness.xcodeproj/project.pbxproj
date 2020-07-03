@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D5B98B5C6C66D716D4DB96A /* libPods-NightBusiness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */; };
+		560CEF1424AF02DA007A4558 /* emptyvw in Resources */ = {isa = PBXBuildFile; fileRef = 560CEF0F24AF02DA007A4558 /* emptyvw */; };
+		560CEF1524AF02DA007A4558 /* MainTabbarVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF1124AF02DA007A4558 /* MainTabbarVM.swift */; };
+		560CEF1624AF02DA007A4558 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF1324AF02DA007A4558 /* MainTabbarViewController.swift */; };
 		56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */; };
 		56424FB024AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */; };
 		56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */; };
@@ -51,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.debug.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		560CEF0F24AF02DA007A4558 /* emptyvw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emptyvw; sourceTree = "<group>"; };
+		560CEF1124AF02DA007A4558 /* MainTabbarVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarVM.swift; sourceTree = "<group>"; };
+		560CEF1324AF02DA007A4558 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterUserNormalTableViewCell.swift; sourceTree = "<group>"; };
 		56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersoncenterUserNormalTableViewCell.xib; sourceTree = "<group>"; };
 		56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterLogoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +115,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		560CEF0D24AF02DA007A4558 /* MainTabbarModule */ = {
+			isa = PBXGroup;
+			children = (
+				560CEF0E24AF02DA007A4558 /* MainTabbarModule_V */,
+				560CEF1024AF02DA007A4558 /* MainTabbarModule_VM */,
+				560CEF1224AF02DA007A4558 /* MainTabbarModule_C */,
+			);
+			path = MainTabbarModule;
+			sourceTree = "<group>";
+		};
+		560CEF0E24AF02DA007A4558 /* MainTabbarModule_V */ = {
+			isa = PBXGroup;
+			children = (
+				560CEF0F24AF02DA007A4558 /* emptyvw */,
+			);
+			path = MainTabbarModule_V;
+			sourceTree = "<group>";
+		};
+		560CEF1024AF02DA007A4558 /* MainTabbarModule_VM */ = {
+			isa = PBXGroup;
+			children = (
+				560CEF1124AF02DA007A4558 /* MainTabbarVM.swift */,
+			);
+			path = MainTabbarModule_VM;
+			sourceTree = "<group>";
+		};
+		560CEF1224AF02DA007A4558 /* MainTabbarModule_C */ = {
+			isa = PBXGroup;
+			children = (
+				560CEF1324AF02DA007A4558 /* MainTabbarViewController.swift */,
+			);
+			path = MainTabbarModule_C;
+			sourceTree = "<group>";
+		};
 		56C3698824AC706F00770439 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +225,7 @@
 		56C369C624AC725F00770439 /* USL */ = {
 			isa = PBXGroup;
 			children = (
+				560CEF0D24AF02DA007A4558 /* MainTabbarModule */,
 				56C369CB24AC728500770439 /* PersonCenterModule */,
 			);
 			path = USL;
@@ -392,6 +433,7 @@
 				56C369A124AC707100770439 /* LaunchScreen.storyboard in Resources */,
 				56C3699E24AC707100770439 /* Assets.xcassets in Resources */,
 				56DCADD824AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib in Resources */,
+				560CEF1424AF02DA007A4558 /* emptyvw in Resources */,
 				56DCADDC24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.xib in Resources */,
 				56C3699C24AC706F00770439 /* Main.storyboard in Resources */,
 				56424FB424AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.xib in Resources */,
@@ -471,6 +513,8 @@
 				56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */,
 				56DCADD424AC7C6C00D8E69E /* NBPersonCenterVModel.swift in Sources */,
 				56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */,
+				560CEF1624AF02DA007A4558 /* MainTabbarViewController.swift in Sources */,
+				560CEF1524AF02DA007A4558 /* MainTabbarVM.swift in Sources */,
 				56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */,
 				56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */,
 				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,

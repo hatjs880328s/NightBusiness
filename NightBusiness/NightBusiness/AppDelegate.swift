@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         NBBizConfig().start()
 
-        let con = UINavigationController(rootViewController: PersonCenterController())
+        let con = MainTabbarController()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = con
