@@ -16,7 +16,7 @@ import UIKit
 
 class MainTabbarController: UITabBarController {
 
-    let mainpage: UINavigationController = UINavigationController(rootViewController: UIViewController())
+    let mainpage: UINavigationController = UINavigationController(rootViewController: MainpageController())
 
     let invitepage: UINavigationController = UINavigationController(rootViewController: UIViewController())
 
