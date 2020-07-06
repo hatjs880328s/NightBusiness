@@ -33,6 +33,7 @@ class NBMainpageTabVw: UIView {
         self.tab.snp.makeConstraints { (make) in
             make.left.right.top.bottom.equalTo(0)
         }
+        self.tab.separatorStyle = .none
         self.tab.delegate = self
         self.tab.dataSource = self
     }

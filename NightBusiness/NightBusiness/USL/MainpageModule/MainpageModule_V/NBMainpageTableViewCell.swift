@@ -49,6 +49,8 @@ class NBMainpageTableViewCell: UITableViewCell {
     }
 
     func initVw() {
+        self.backgroundColor = UIColor.groupTableViewBackground
+
         self.cententBgVw.layer.cornerRadius = 5
         self.cententBgVw.layer.masksToBounds = true
         self.cententBgVw.backgroundColor = IHTUIConfig.whiteColor
