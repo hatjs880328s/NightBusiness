@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D5B98B5C6C66D716D4DB96A /* libPods-NightBusiness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */; };
+		560BC1D524B305AF00DA7E59 /* IHTSDImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BC1D224B305AF00DA7E59 /* IHTSDImageExtension.swift */; };
+		560BC1D624B305AF00DA7E59 /* IHTImageUti.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BC1D424B305AF00DA7E59 /* IHTImageUti.m */; };
 		560CEF1424AF02DA007A4558 /* emptyvw in Resources */ = {isa = PBXBuildFile; fileRef = 560CEF0F24AF02DA007A4558 /* emptyvw */; };
 		560CEF1524AF02DA007A4558 /* MainTabbarVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF1124AF02DA007A4558 /* MainTabbarVM.swift */; };
 		560CEF1624AF02DA007A4558 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF1324AF02DA007A4558 /* MainTabbarViewController.swift */; };
@@ -22,6 +24,9 @@
 		56424FB024AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */; };
 		56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */; };
 		56424FB424AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56424FB224AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.xib */; };
+		565AB5C924B2D02C0092B22C /* NBMainpageDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5C824B2D02C0092B22C /* NBMainpageDAL.swift */; };
+		565AB5CB24B2D2630092B22C /* NBMainpageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */; };
+		565AB5CD24B2D3610092B22C /* NBAPIUti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5CC24B2D3610092B22C /* NBAPIUti.swift */; };
 		56C3699524AC706F00770439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699424AC706F00770439 /* AppDelegate.swift */; };
 		56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699624AC706F00770439 /* SceneDelegate.swift */; };
 		56C3699924AC706F00770439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699824AC706F00770439 /* ViewController.swift */; };
@@ -61,6 +66,10 @@
 
 /* Begin PBXFileReference section */
 		2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.debug.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		560BC1D124B305AE00DA7E59 /* NightBusiness-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NightBusiness-Bridging-Header.h"; sourceTree = "<group>"; };
+		560BC1D224B305AF00DA7E59 /* IHTSDImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTSDImageExtension.swift; sourceTree = "<group>"; };
+		560BC1D324B305AF00DA7E59 /* IHTImageUti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTImageUti.h; sourceTree = "<group>"; };
+		560BC1D424B305AF00DA7E59 /* IHTImageUti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHTImageUti.m; sourceTree = "<group>"; };
 		560CEF0F24AF02DA007A4558 /* emptyvw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emptyvw; sourceTree = "<group>"; };
 		560CEF1124AF02DA007A4558 /* MainTabbarVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarVM.swift; sourceTree = "<group>"; };
 		560CEF1324AF02DA007A4558 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +84,9 @@
 		56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersoncenterUserNormalTableViewCell.xib; sourceTree = "<group>"; };
 		56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterLogoutTableViewCell.swift; sourceTree = "<group>"; };
 		56424FB224AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersoncenterLogoutTableViewCell.xib; sourceTree = "<group>"; };
+		565AB5C824B2D02C0092B22C /* NBMainpageDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageDAL.swift; sourceTree = "<group>"; };
+		565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageListModel.swift; sourceTree = "<group>"; };
+		565AB5CC24B2D3610092B22C /* NBAPIUti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAPIUti.swift; sourceTree = "<group>"; };
 		56C3699124AC706F00770439 /* NightBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C3699424AC706F00770439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C3699624AC706F00770439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +141,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		560BC1D024B3059900DA7E59 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				560BC1D324B305AF00DA7E59 /* IHTImageUti.h */,
+				560BC1D424B305AF00DA7E59 /* IHTImageUti.m */,
+				560BC1D224B305AF00DA7E59 /* IHTSDImageExtension.swift */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		560CEF0D24AF02DA007A4558 /* MainTabbarModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +256,7 @@
 				56C3699424AC706F00770439 /* AppDelegate.swift */,
 				56C3699624AC706F00770439 /* SceneDelegate.swift */,
 				56C3699824AC706F00770439 /* ViewController.swift */,
+				560BC1D124B305AE00DA7E59 /* NightBusiness-Bridging-Header.h */,
 				56C3699A24AC706F00770439 /* Main.storyboard */,
 				56C3699D24AC707100770439 /* Assets.xcassets */,
 				56C3699F24AC707100770439 /* LaunchScreen.storyboard */,
@@ -263,6 +286,8 @@
 		56C369C424AC725500770439 /* DAL */ = {
 			isa = PBXGroup;
 			children = (
+				565AB5C824B2D02C0092B22C /* NBMainpageDAL.swift */,
+				565AB5CC24B2D3610092B22C /* NBAPIUti.swift */,
 			);
 			path = DAL;
 			sourceTree = "<group>";
@@ -287,6 +312,7 @@
 		56C369C724AC726500770439 /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
+				565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */,
 			);
 			path = MODEL;
 			sourceTree = "<group>";
@@ -345,6 +371,7 @@
 		56C369D924AC73D400770439 /* UIUti */ = {
 			isa = PBXGroup;
 			children = (
+				560BC1D024B3059900DA7E59 /* img */,
 				56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */,
 				56C369D724AC738D00770439 /* IHTUIConfig.swift */,
 			);
@@ -447,6 +474,7 @@
 				TargetAttributes = {
 					56C3699024AC706F00770439 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					56C369A624AC707100770439 = {
 						CreatedOnToolsVersion = 11.5;
@@ -565,10 +593,13 @@
 				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,
 				560CEF2824AF2392007A4558 /* NBMainpageTabVw.swift in Sources */,
 				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
+				565AB5CB24B2D2630092B22C /* NBMainpageListModel.swift in Sources */,
+				560BC1D624B305AF00DA7E59 /* IHTImageUti.m in Sources */,
 				56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */,
 				56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */,
 				560CEF2524AF0AD7007A4558 /* NBMainpagetopVw.swift in Sources */,
 				56DCADD424AC7C6C00D8E69E /* NBPersonCenterVModel.swift in Sources */,
+				565AB5C924B2D02C0092B22C /* NBMainpageDAL.swift in Sources */,
 				560CEF2224AF09BB007A4558 /* MainpageViewController.swift in Sources */,
 				56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */,
 				560CEF1624AF02DA007A4558 /* MainTabbarViewController.swift in Sources */,
@@ -577,6 +608,8 @@
 				560CEF1524AF02DA007A4558 /* MainTabbarVM.swift in Sources */,
 				56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */,
 				56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */,
+				560BC1D524B305AF00DA7E59 /* IHTSDImageExtension.swift in Sources */,
+				565AB5CD24B2D3610092B22C /* NBAPIUti.swift in Sources */,
 				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,
 				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
 			);
@@ -752,6 +785,7 @@
 			baseConfigurationReference = 2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVGL8H4887;
 				INFOPLIST_FILE = NightBusiness/Info.plist;
@@ -761,6 +795,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shanwz/Desktop/NightBusiness/NightBusiness/NightBusiness/NightBusiness-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -771,6 +807,7 @@
 			baseConfigurationReference = 8185420DA230179A7BC443A5 /* Pods-NightBusiness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVGL8H4887;
 				INFOPLIST_FILE = NightBusiness/Info.plist;
@@ -780,6 +817,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shanwz/Desktop/NightBusiness/NightBusiness/NightBusiness/NightBusiness-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

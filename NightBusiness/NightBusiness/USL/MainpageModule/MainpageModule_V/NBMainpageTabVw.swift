@@ -21,6 +21,7 @@ class NBMainpageTabVw: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.initVw()
     }
 
     required init?(coder: NSCoder) {
@@ -29,6 +30,9 @@ class NBMainpageTabVw: UIView {
 
     func initVw() {
         self.addSubview(self.tab)
+        self.tab.snp.makeConstraints { (make) in
+            make.left.right.top.bottom.equalTo(0)
+        }
         self.tab.delegate = self
         self.tab.dataSource = self
     }
@@ -43,7 +47,20 @@ extension NBMainpageTabVw: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(NBMainpageTabVw.self))
-        return UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "id")
+        var cell = tableView.dequeueReusableCell(withIdentifier: "NBMainpageTableViewCell") as? NBMainpageTableViewCell
+        if cell == nil {
+            cell = Bundle.main.loadNibNamed("NBMainpageTableViewCell", owner: self, options: nil)?.first as? NBMainpageTableViewCell
+            if cell == nil {
+                return UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "two")
+            }
+        }
+
+        let model = dataSource[indexPath.row]
+        cell?.setData(imgs: model.imgs, title: model.title, subtitle: model.subtitle, distance: model.distance)
+        return cell!
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }

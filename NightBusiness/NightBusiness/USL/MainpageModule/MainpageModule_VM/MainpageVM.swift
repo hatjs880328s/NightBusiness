@@ -16,7 +16,7 @@ import Foundation
 public class MainpageVM: NSObject {
 
     /// DATA
-    var dataSource: [NSObject] = [] {
+    var dataSource: [NBMainpageCellVmodel] = [] {
         didSet {
             self.reloadAction?(dataSource.count == 0)
         }
@@ -24,6 +24,8 @@ public class MainpageVM: NSObject {
 
     /// DATA RELOAD ACTION
     var reloadAction: ( (_ zerocount: Bool) -> Void)?
+
+    var dal: NBMainpageDAL = NBMainpageDAL()
 
     override init() {
         super.init()
@@ -37,6 +39,18 @@ public class MainpageVM: NSObject {
 /// MAKR: - API PROGRESS
 extension MainpageVM {
 
+    func getListData() {
+        _ = NBMainpageDAL.getMainpageListData(cityid: "").subscribe(onNext: { element in
+            guard let item = [NBMainpageListItemModel].deserialize(from: element) as? [NBMainpageListItemModel] else { return }
+
+            var result = [NBMainpageCellVmodel]()
+            for eachItem in item {
+                result.append(NBMainpageCellVmodel(model: eachItem))
+            }
+
+            self.dataSource = result
+        })
+    }
 }
 
 /// MAKR: - OTHERS PROGRESS

@@ -15,6 +15,9 @@ import Foundation
 
 class MainpageController: IHTBaseSwiftViewController {
 
+    let vm = MainpageVM()
+
+    let tab = NBMainpageTabVw()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initVw()
@@ -40,7 +43,13 @@ class MainpageController: IHTBaseSwiftViewController {
 extension MainpageController {
 
     func initVw() {
-        _ = NBMainpagetopVw(frame: CGRect.zero, fatherVw: self.view)
+        let topVw = NBMainpagetopVw(frame: CGRect.zero, fatherVw: self.view)
+        self.view.addSubview(self.tab)
+        self.tab.snp.makeConstraints { (make) in
+            make.left.right.equalTo(0)
+            make.top.equalTo(topVw.snp.bottom)
+            make.bottom.equalTo(0)
+        }
     }
 
 }
@@ -49,7 +58,12 @@ extension MainpageController {
 extension MainpageController {
 
     func initVm() {
+        self.vm.reloadAction = { [weak self] _ in
+            self?.tab.dataSource = self?.vm.dataSource ?? []
+            self?.tab.tab.reloadData()
+        }
 
+        self.vm.getListData()
     }
 
 }

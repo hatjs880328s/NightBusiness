@@ -26,4 +26,9 @@ class NBMainpageCellVmodel: NSObject {
     var hotCount: Float = 9.0
 
     var imgs: [String] = []
+
+    init(model: NBMainpageListItemModel) {
+        self.title = model.name
+        self.subtitle = model.address
+    }
 }

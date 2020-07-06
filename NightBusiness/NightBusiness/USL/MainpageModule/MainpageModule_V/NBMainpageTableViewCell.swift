@@ -77,6 +77,8 @@ class NBMainpageTableViewCell: UITableViewCell {
 
         self.realDisLb.text = distance
 
+        self.topImg.ihtHeadImgSetting(url: nil, userName: title)
+
         if imgs.count == 0 {
             self.firstImg.alpha = 0
             self.secondImg.alpha = 0
