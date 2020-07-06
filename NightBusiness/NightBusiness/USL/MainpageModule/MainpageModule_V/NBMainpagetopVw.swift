@@ -43,7 +43,20 @@ class NBMainpagetopVw: UIView {
         self.backgroundColor = IHTUIConfig.mainThemeColor
 
         self.nameLb.font = IHTUIConfig.naviBarTitleFont
+
         self.nameLb.textColor = IHTUIConfig.whiteColor
+
+        self.addSubview(self.nameLb)
+
+        self.nameLb.snp.makeConstraints { (make) in
+            make.top.equalTo(IHTUIConfig.isIphoneX ? 50 : 30)
+            make.left.right.equalTo(0)
+            make.height.equalTo(20)
+        }
+
+        self.nameLb.textAlignment = .center
+
+        self.nameLb.text = "City JINAN"
     }
 
     func setData(name: String) {

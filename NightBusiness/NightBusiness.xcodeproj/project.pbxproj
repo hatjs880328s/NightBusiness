@@ -14,6 +14,10 @@
 		560CEF2224AF09BB007A4558 /* MainpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF1E24AF09BB007A4558 /* MainpageViewController.swift */; };
 		560CEF2324AF09BB007A4558 /* MainpageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2024AF09BB007A4558 /* MainpageVM.swift */; };
 		560CEF2524AF0AD7007A4558 /* NBMainpagetopVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2424AF0AD7007A4558 /* NBMainpagetopVw.swift */; };
+		560CEF2824AF2392007A4558 /* NBMainpageTabVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2724AF2392007A4558 /* NBMainpageTabVw.swift */; };
+		560CEF2A24AF2406007A4558 /* NBMainpageCellVmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2924AF2406007A4558 /* NBMainpageCellVmodel.swift */; };
+		560CEF2D24AF24C9007A4558 /* NBMainpageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */; };
+		560CEF2E24AF24C9007A4558 /* NBMainpageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */; };
 		56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */; };
 		56424FB024AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */; };
 		56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */; };
@@ -63,6 +67,10 @@
 		560CEF1E24AF09BB007A4558 /* MainpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainpageViewController.swift; sourceTree = "<group>"; };
 		560CEF2024AF09BB007A4558 /* MainpageVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainpageVM.swift; sourceTree = "<group>"; };
 		560CEF2424AF0AD7007A4558 /* NBMainpagetopVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpagetopVw.swift; sourceTree = "<group>"; };
+		560CEF2724AF2392007A4558 /* NBMainpageTabVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageTabVw.swift; sourceTree = "<group>"; };
+		560CEF2924AF2406007A4558 /* NBMainpageCellVmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageCellVmodel.swift; sourceTree = "<group>"; };
+		560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageTableViewCell.swift; sourceTree = "<group>"; };
+		560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBMainpageTableViewCell.xib; sourceTree = "<group>"; };
 		56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterUserNormalTableViewCell.swift; sourceTree = "<group>"; };
 		56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersoncenterUserNormalTableViewCell.xib; sourceTree = "<group>"; };
 		56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterLogoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,6 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				560CEF2424AF0AD7007A4558 /* NBMainpagetopVw.swift */,
+				560CEF2724AF2392007A4558 /* NBMainpageTabVw.swift */,
+				560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */,
+				560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */,
 			);
 			path = MainpageModule_V;
 			sourceTree = "<group>";
@@ -185,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				560CEF2024AF09BB007A4558 /* MainpageVM.swift */,
+				560CEF2924AF2406007A4558 /* NBMainpageCellVmodel.swift */,
 			);
 			path = MainpageModule_VM;
 			sourceTree = "<group>";
@@ -471,6 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560CEF2E24AF24C9007A4558 /* NBMainpageTableViewCell.xib in Resources */,
 				56C369A124AC707100770439 /* LaunchScreen.storyboard in Resources */,
 				56C3699E24AC707100770439 /* Assets.xcassets in Resources */,
 				56DCADD824AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib in Resources */,
@@ -550,6 +563,7 @@
 				560CEF2324AF09BB007A4558 /* MainpageVM.swift in Sources */,
 				56C3699924AC706F00770439 /* ViewController.swift in Sources */,
 				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,
+				560CEF2824AF2392007A4558 /* NBMainpageTabVw.swift in Sources */,
 				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
 				56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */,
 				56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */,
@@ -558,6 +572,8 @@
 				560CEF2224AF09BB007A4558 /* MainpageViewController.swift in Sources */,
 				56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */,
 				560CEF1624AF02DA007A4558 /* MainTabbarViewController.swift in Sources */,
+				560CEF2D24AF24C9007A4558 /* NBMainpageTableViewCell.swift in Sources */,
+				560CEF2A24AF2406007A4558 /* NBMainpageCellVmodel.swift in Sources */,
 				560CEF1524AF02DA007A4558 /* MainTabbarVM.swift in Sources */,
 				56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */,
 				56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */,
