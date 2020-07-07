@@ -1,17 +1,11 @@
 PODS:
-  - AMap3DMap (6.9.0):
-    - AMapFoundation (~> 1.5)
-  - AMapFoundation (1.6.3)
-  - AMapLocation (2.6.2):
-    - AMapFoundation (~> 1.4)
-  - AMapSearch (6.9.0):
-    - AMapFoundation (~> 1.4)
   - Bugly (2.5.0)
   - Differentiator (4.0.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - HandyJSON (5.0.0)
+  - Hero (1.5.0)
   - II18N (0.1.2)
   - IIAOPNBP (1.0.15):
     - IISwiftBaseUti
@@ -328,16 +322,15 @@ PODS:
   - SDWebImage/Core (5.0.0)
   - SnapKit (4.2.0)
   - SwiftyJSON (5.0.0)
+  - TencentMap-SDK (4.3.2)
   - Toast (4.0.0)
   - WechatOpenSDK (1.8.6.2)
 
 DEPENDENCIES:
-  - AMap3DMap (= 6.9.0)
-  - AMapLocation (= 2.6.2)
-  - AMapSearch (= 6.9.0)
   - Bugly (= 2.5.0)
   - FMDB (= 2.6.2)
   - HandyJSON (= 5.0.0)
+  - Hero
   - II18N
   - IIAOPNBP
   - IIBaseComponents (= 0.1.3)
@@ -357,18 +350,16 @@ DEPENDENCIES:
   - SDWebImage (= 5.0.0)
   - SnapKit (= 4.2.0)
   - SwiftyJSON (= 5.0.0)
+  - TencentMap-SDK
   - WechatOpenSDK (= 1.8.6.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AMap3DMap
-    - AMapFoundation
-    - AMapLocation
-    - AMapSearch
     - Bugly
     - Differentiator
     - FMDB
     - HandyJSON
+    - Hero
     - II18N
     - IIAOPNBP
     - IIBaseComponents
@@ -390,18 +381,16 @@ SPEC REPOS:
     - SDWebImage
     - SnapKit
     - SwiftyJSON
+    - TencentMap-SDK
     - Toast
     - WechatOpenSDK
 
 SPEC CHECKSUMS:
-  AMap3DMap: c80b264f08f179d9b0949b84c65fc1a51dec9d6f
-  AMapFoundation: 9ed923193b357ebb30a073e9fe255d3c24054d5a
-  AMapLocation: 89a7e4eb6040d32ba73c77a4966ecc66e46aa7c3
-  AMapSearch: af02822537e55b85a4752e9df5c19e4b9da82031
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   II18N: 78fb02d83e49ae805d2b24c3a060264c3399436d
   IIAOPNBP: 2c1a0a2f559c75a0867b8e0c8946de071ef8209e
   IIBaseComponents: 230e811fe2be001af1db1685c284da6dbe0b3e47
@@ -423,9 +412,10 @@ SPEC CHECKSUMS:
   SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TencentMap-SDK: 385e59541a65ea6ed1a38ae08f29d775ccf6e0a8
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   WechatOpenSDK: 8b3ba4239193d1112205c139c94e21934e8f369a
 
-PODFILE CHECKSUM: c7c3f50b453e9403e628414c2f27919cda6e998e
+PODFILE CHECKSUM: ec169c4c77a58ad3c7c0cfc9fe767f1ef325158e
 
 COCOAPODS: 1.7.1

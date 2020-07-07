@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D5B98B5C6C66D716D4DB96A /* libPods-NightBusiness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */; };
+		5601B48224B4492E006C9D14 /* MapModuleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601B47D24B4492E006C9D14 /* MapModuleVM.swift */; };
+		5601B48624B44942006C9D14 /* NBMapVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601B48524B44942006C9D14 /* NBMapVw.swift */; };
+		5601B48824B44C04006C9D14 /* MapModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601B48724B44C04006C9D14 /* MapModuleViewController.swift */; };
 		560BC1D524B305AF00DA7E59 /* IHTSDImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BC1D224B305AF00DA7E59 /* IHTSDImageExtension.swift */; };
 		560BC1D624B305AF00DA7E59 /* IHTImageUti.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BC1D424B305AF00DA7E59 /* IHTImageUti.m */; };
 		560CEF1424AF02DA007A4558 /* emptyvw in Resources */ = {isa = PBXBuildFile; fileRef = 560CEF0F24AF02DA007A4558 /* emptyvw */; };
@@ -28,6 +31,8 @@
 		565AB5C924B2D02C0092B22C /* NBMainpageDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5C824B2D02C0092B22C /* NBMainpageDAL.swift */; };
 		565AB5CB24B2D2630092B22C /* NBMainpageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */; };
 		565AB5CD24B2D3610092B22C /* NBAPIUti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5CC24B2D3610092B22C /* NBAPIUti.swift */; };
+		569D4D3824B4712D00452C60 /* TencentLBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3724B4712D00452C60 /* TencentLBS.framework */; };
+		569D4D3B24B4762300452C60 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */; };
 		56C3699524AC706F00770439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699424AC706F00770439 /* AppDelegate.swift */; };
 		56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699624AC706F00770439 /* SceneDelegate.swift */; };
 		56C3699924AC706F00770439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699824AC706F00770439 /* ViewController.swift */; };
@@ -67,6 +72,9 @@
 
 /* Begin PBXFileReference section */
 		2D5811A444AA8DD2BA3A0D4B /* Pods-NightBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NightBusiness.debug.xcconfig"; path = "Target Support Files/Pods-NightBusiness/Pods-NightBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		5601B47D24B4492E006C9D14 /* MapModuleVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleVM.swift; sourceTree = "<group>"; };
+		5601B48524B44942006C9D14 /* NBMapVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMapVw.swift; sourceTree = "<group>"; };
+		5601B48724B44C04006C9D14 /* MapModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleViewController.swift; sourceTree = "<group>"; };
 		560BC1D124B305AE00DA7E59 /* NightBusiness-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NightBusiness-Bridging-Header.h"; sourceTree = "<group>"; };
 		560BC1D224B305AF00DA7E59 /* IHTSDImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTSDImageExtension.swift; sourceTree = "<group>"; };
 		560BC1D324B305AF00DA7E59 /* IHTImageUti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHTImageUti.h; sourceTree = "<group>"; };
@@ -89,6 +97,8 @@
 		565AB5C824B2D02C0092B22C /* NBMainpageDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageDAL.swift; sourceTree = "<group>"; };
 		565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageListModel.swift; sourceTree = "<group>"; };
 		565AB5CC24B2D3610092B22C /* NBAPIUti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAPIUti.swift; sourceTree = "<group>"; };
+		569D4D3724B4712D00452C60 /* TencentLBS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentLBS.framework; sourceTree = "<group>"; };
+		569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		56C3699124AC706F00770439 /* NightBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C3699424AC706F00770439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C3699624AC706F00770439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569D4D3B24B4762300452C60 /* libz.1.2.5.tbd in Frameworks */,
+				569D4D3824B4712D00452C60 /* TencentLBS.framework in Frameworks */,
 				4D5B98B5C6C66D716D4DB96A /* libPods-NightBusiness.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +155,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5601B47B24B4492E006C9D14 /* MapModuleModule */ = {
+			isa = PBXGroup;
+			children = (
+				5601B47C24B4492E006C9D14 /* MapModuleModule_VM */,
+				5601B47E24B4492E006C9D14 /* MapModuleModule_C */,
+				5601B48024B4492E006C9D14 /* MapModuleModule_V */,
+			);
+			path = MapModuleModule;
+			sourceTree = "<group>";
+		};
+		5601B47C24B4492E006C9D14 /* MapModuleModule_VM */ = {
+			isa = PBXGroup;
+			children = (
+				5601B47D24B4492E006C9D14 /* MapModuleVM.swift */,
+			);
+			path = MapModuleModule_VM;
+			sourceTree = "<group>";
+		};
+		5601B47E24B4492E006C9D14 /* MapModuleModule_C */ = {
+			isa = PBXGroup;
+			children = (
+				5601B48724B44C04006C9D14 /* MapModuleViewController.swift */,
+			);
+			path = MapModuleModule_C;
+			sourceTree = "<group>";
+		};
+		5601B48024B4492E006C9D14 /* MapModuleModule_V */ = {
+			isa = PBXGroup;
+			children = (
+				5601B48524B44942006C9D14 /* NBMapVw.swift */,
+			);
+			path = MapModuleModule_V;
+			sourceTree = "<group>";
+		};
 		560BC1D024B3059900DA7E59 /* img */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +272,14 @@
 			path = MainpageModule_VM;
 			sourceTree = "<group>";
 		};
+		569D4D3624B4712300452C60 /* LIB */ = {
+			isa = PBXGroup;
+			children = (
+				569D4D3724B4712D00452C60 /* TencentLBS.framework */,
+			);
+			path = LIB;
+			sourceTree = "<group>";
+		};
 		56C3698824AC706F00770439 = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +359,7 @@
 		56C369C624AC725F00770439 /* USL */ = {
 			isa = PBXGroup;
 			children = (
+				5601B47B24B4492E006C9D14 /* MapModuleModule */,
 				560CEF1A24AF09BB007A4558 /* MainpageModule */,
 				560CEF0D24AF02DA007A4558 /* MainTabbarModule */,
 				56C369CB24AC728500770439 /* PersonCenterModule */,
@@ -323,6 +378,7 @@
 		56C369C824AC726900770439 /* UTI */ = {
 			isa = PBXGroup;
 			children = (
+				569D4D3624B4712300452C60 /* LIB */,
 				56DCADDD24AC8AF200D8E69E /* BizUti */,
 				56C369D924AC73D400770439 /* UIUti */,
 			);
@@ -392,6 +448,7 @@
 		74F6F8DC50AF51241DF5B366 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */,
 				B629AE1BDA539A4FFBED49A2 /* libPods-NightBusiness.a */,
 			);
 			name = Frameworks;
@@ -592,8 +649,11 @@
 				56DCADDF24AC8B0200D8E69E /* NBBizConfig.swift in Sources */,
 				56C369D824AC738D00770439 /* IHTUIConfig.swift in Sources */,
 				560CEF2324AF09BB007A4558 /* MainpageVM.swift in Sources */,
+				5601B48224B4492E006C9D14 /* MapModuleVM.swift in Sources */,
 				56C3699924AC706F00770439 /* ViewController.swift in Sources */,
+				5601B48824B44C04006C9D14 /* MapModuleViewController.swift in Sources */,
 				560F3CC924B4186000CD433C /* NBMainpageHeaderVw.swift in Sources */,
+				5601B48624B44942006C9D14 /* NBMapVw.swift in Sources */,
 				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,
 				560CEF2824AF2392007A4558 /* NBMainpageTabVw.swift in Sources */,
 				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
@@ -792,10 +852,84 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVGL8H4887;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NightBusiness/UTI/LIB",
+				);
 				INFOPLIST_FILE = NightBusiness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Differentiator\"",
+					"-l\"FMDB\"",
+					"-l\"HandyJSON\"",
+					"-l\"Hero\"",
+					"-l\"II18N\"",
+					"-l\"IIAOPNBP\"",
+					"-l\"IIBLL\"",
+					"-l\"IIBaseComponents\"",
+					"-l\"IIComponents\"",
+					"-l\"IIHTTPRequest\"",
+					"-l\"IINETObserver\"",
+					"-l\"IIOCUtis\"",
+					"-l\"IISecurity\"",
+					"-l\"IISwiftBaseUti\"",
+					"-l\"IIUIAndBizConfig\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"RxCocoa\"",
+					"-l\"RxDataSources\"",
+					"-l\"RxRelay\"",
+					"-l\"RxSwift\"",
+					"-l\"SDWebImage\"",
+					"-l\"SnapKit\"",
+					"-l\"SwiftyJSON\"",
+					"-l\"Toast\"",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Bugly\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"EventKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QMapKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UserNotifications\"",
+					"-framework",
+					"\"WebKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -814,10 +948,84 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVGL8H4887;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NightBusiness/UTI/LIB",
+				);
 				INFOPLIST_FILE = NightBusiness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Differentiator\"",
+					"-l\"FMDB\"",
+					"-l\"HandyJSON\"",
+					"-l\"Hero\"",
+					"-l\"II18N\"",
+					"-l\"IIAOPNBP\"",
+					"-l\"IIBLL\"",
+					"-l\"IIBaseComponents\"",
+					"-l\"IIComponents\"",
+					"-l\"IIHTTPRequest\"",
+					"-l\"IINETObserver\"",
+					"-l\"IIOCUtis\"",
+					"-l\"IISecurity\"",
+					"-l\"IISwiftBaseUti\"",
+					"-l\"IIUIAndBizConfig\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"RxCocoa\"",
+					"-l\"RxDataSources\"",
+					"-l\"RxRelay\"",
+					"-l\"RxSwift\"",
+					"-l\"SDWebImage\"",
+					"-l\"SnapKit\"",
+					"-l\"SwiftyJSON\"",
+					"-l\"Toast\"",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Bugly\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"EventKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QMapKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UserNotifications\"",
+					"-framework",
+					"\"WebKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Noahshan.NightBusiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";

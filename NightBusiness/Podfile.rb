@@ -11,7 +11,6 @@ target 'NightBusiness' do
     pod 'Bugly',                  '2.5.0'
 
     # swift initialization
-    # IIHTTPRequest: net check and http request refrence II18N
     pod 'RxSwift',                '5.0.0'
     pod 'RxCocoa',                '5.0.0'
     pod 'RxRelay',                '5.0.0'
@@ -33,15 +32,11 @@ target 'NightBusiness' do
     pod 'IIAOPNBP'
     pod 'IIUIAndBizConfig'
 
-    # cloud plus 1.0 biz module
-    # pod 'IIWebEX',                '0.2.1'
-
-
     # 高德地图
-    pod 'AMapLocation',           '2.6.2'
-    pod 'AMapSearch',             '6.9.0'
-    pod 'AMap3DMap',              '6.9.0'
+    pod 'TencentMap-SDK'
     pod 'WechatOpenSDK',          '1.8.6.2'
+
+    pod 'Hero'
 
 end
 

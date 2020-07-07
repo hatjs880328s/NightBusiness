@@ -4,3 +4,5 @@
 
 #import "IHTImageUti.h"
 #import "UIImageView+WebCache.h"
+
+#import "QMapKit/QMapKit.h"

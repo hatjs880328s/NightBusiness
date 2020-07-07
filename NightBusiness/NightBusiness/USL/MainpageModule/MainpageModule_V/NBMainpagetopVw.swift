@@ -57,6 +57,22 @@ class NBMainpagetopVw: UIView {
         self.nameLb.textAlignment = .center
 
         self.nameLb.text = "City JINAN"
+
+        /// 定位btn
+        let locationBtn = UIImageView()
+        self.addSubview(locationBtn)
+        locationBtn.snp.makeConstraints { (make) in
+            make.width.height.equalTo(30)
+            make.right.equalTo(-22)
+            make.centerY.equalTo(nameLb.snp.centerY)
+        }
+        locationBtn.image = UIImage(named: "mainpage_location")
+
+        locationBtn.tapActionsGesture { [weak self] in
+            let con = MapModuleController()
+            con.hidesBottomBarWhenPushed = true
+            self?.ViewController()?.navigationController?.pushViewController(con, animated: true)
+        }
     }
 
     func setData(name: String) {
