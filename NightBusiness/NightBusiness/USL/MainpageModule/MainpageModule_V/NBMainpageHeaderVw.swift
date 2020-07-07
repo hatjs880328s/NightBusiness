@@ -62,8 +62,8 @@ class NBMainpageHeaderVw: UIView {
             make.bottom.equalTo(-20)
         }
         deslb.numberOfLines = 0
-        deslb.text = "dsafjasdlkfjl;asdjfljasldfjlasdjflksajfdlsalkjfasdlfjasld;jflajsdflj"
-        deslb.font = IHTUIConfig.listTitleFont
+        deslb.text = "济南，别称泉城，副省级城市，是山东省省会、济南都市圈核心城市、国务院批复确定的环渤海地区南翼的中心城市 [1]  ，是山东省政治、经济、文化、科技、教育和金融中心，重要的交通枢纽。"
+        deslb.font = IHTUIConfig.listSubtitleFont
 
 
     }

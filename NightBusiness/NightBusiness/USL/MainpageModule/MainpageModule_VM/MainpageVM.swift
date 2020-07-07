@@ -47,7 +47,7 @@ extension MainpageVM {
             for eachItem in item {
                 let realitem = NBMainpageCellVmodel(model: eachItem)
                 realitem.hotCount = Double(arc4random() % 10)
-                //realitem.imgs = ["mainpage_normal_share", "mainpage_normal_share", "mainpage_normal_share"]
+                realitem.distance = "\(arc4random() % 80)km"
                 result.append(realitem)
             }
 
