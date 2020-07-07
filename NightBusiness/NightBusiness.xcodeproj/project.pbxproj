@@ -33,6 +33,8 @@
 		565AB5CD24B2D3610092B22C /* NBAPIUti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5CC24B2D3610092B22C /* NBAPIUti.swift */; };
 		569D4D3824B4712D00452C60 /* TencentLBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3724B4712D00452C60 /* TencentLBS.framework */; };
 		569D4D3B24B4762300452C60 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */; };
+		569D4D3E24B4773C00452C60 /* NBQMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D4D3D24B4773C00452C60 /* NBQMap.swift */; };
+		569D4D4C24B49F6600452C60 /* NBGlobalUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D4D4B24B49F6600452C60 /* NBGlobalUserInfo.swift */; };
 		56C3699524AC706F00770439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699424AC706F00770439 /* AppDelegate.swift */; };
 		56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699624AC706F00770439 /* SceneDelegate.swift */; };
 		56C3699924AC706F00770439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3699824AC706F00770439 /* ViewController.swift */; };
@@ -99,6 +101,8 @@
 		565AB5CC24B2D3610092B22C /* NBAPIUti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAPIUti.swift; sourceTree = "<group>"; };
 		569D4D3724B4712D00452C60 /* TencentLBS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentLBS.framework; sourceTree = "<group>"; };
 		569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		569D4D3D24B4773C00452C60 /* NBQMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBQMap.swift; sourceTree = "<group>"; };
+		569D4D4B24B49F6600452C60 /* NBGlobalUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBGlobalUserInfo.swift; sourceTree = "<group>"; };
 		56C3699124AC706F00770439 /* NightBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C3699424AC706F00770439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C3699624AC706F00770439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -280,6 +284,30 @@
 			path = LIB;
 			sourceTree = "<group>";
 		};
+		569D4D3C24B4773100452C60 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				569D4D3D24B4773C00452C60 /* NBQMap.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		569D4D4924B49F4600452C60 /* mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */,
+			);
+			path = mainpage;
+			sourceTree = "<group>";
+		};
+		569D4D4A24B49F5600452C60 /* userinfo */ = {
+			isa = PBXGroup;
+			children = (
+				569D4D4B24B49F6600452C60 /* NBGlobalUserInfo.swift */,
+			);
+			path = userinfo;
+			sourceTree = "<group>";
+		};
 		56C3698824AC706F00770439 = {
 			isa = PBXGroup;
 			children = (
@@ -370,7 +398,8 @@
 		56C369C724AC726500770439 /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
-				565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */,
+				569D4D4A24B49F5600452C60 /* userinfo */,
+				569D4D4924B49F4600452C60 /* mainpage */,
 			);
 			path = MODEL;
 			sourceTree = "<group>";
@@ -430,6 +459,7 @@
 		56C369D924AC73D400770439 /* UIUti */ = {
 			isa = PBXGroup;
 			children = (
+				569D4D3C24B4773100452C60 /* map */,
 				560BC1D024B3059900DA7E59 /* img */,
 				56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */,
 				56C369D724AC738D00770439 /* IHTUIConfig.swift */,
@@ -673,7 +703,9 @@
 				56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */,
 				56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */,
 				560BC1D524B305AF00DA7E59 /* IHTSDImageExtension.swift in Sources */,
+				569D4D3E24B4773C00452C60 /* NBQMap.swift in Sources */,
 				565AB5CD24B2D3610092B22C /* NBAPIUti.swift in Sources */,
+				569D4D4C24B49F6600452C60 /* NBGlobalUserInfo.swift in Sources */,
 				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,
 				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
 			);

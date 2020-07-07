@@ -16,7 +16,7 @@ import IIHTTPRequest
 
 class NBBizConfig: NSObject {
 
-    let mapKey: String = "KZ2BZ-56WKP-I2BDO-V4DXQ-I2DR2-DVFWC"
+    static let mapKey: String = "KZ2BZ-56WKP-I2BDO-V4DXQ-I2DR2-DVFWC"
 
     func start() {
 
@@ -29,7 +29,7 @@ class NBBizConfig: NSObject {
         IIHTTPModuleDoor.dynamicParams = dynamic
 
         /// map
-        QMapServices.shared().apiKey = self.mapKey
+        QMapServices.shared().apiKey = NBBizConfig.mapKey
     }
 
     private override init() {
