@@ -45,7 +45,10 @@ extension MainpageVM {
 
             var result = [NBMainpageCellVmodel]()
             for eachItem in item {
-                result.append(NBMainpageCellVmodel(model: eachItem))
+                let realitem = NBMainpageCellVmodel(model: eachItem)
+                realitem.hotCount = Double(arc4random() % 10)
+                //realitem.imgs = ["mainpage_normal_share", "mainpage_normal_share", "mainpage_normal_share"]
+                result.append(realitem)
             }
 
             self.dataSource = result

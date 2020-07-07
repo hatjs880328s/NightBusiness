@@ -15,7 +15,7 @@ import UIKit
 
 class NBMainpageTabVw: UIView {
 
-    var tab: UITableView = UITableView()
+    var tab: UITableView = UITableView(frame: CGRect.zero, style: UITableView.Style.grouped)
 
     var dataSource: [NBMainpageCellVmodel] = []
 
@@ -29,10 +29,12 @@ class NBMainpageTabVw: UIView {
     }
 
     func initVw() {
+        self.backgroundColor = UIColor.clear
         self.addSubview(self.tab)
         self.tab.snp.makeConstraints { (make) in
             make.left.right.top.bottom.equalTo(0)
         }
+        self.tab.backgroundColor = UIColor.clear
         self.tab.separatorStyle = .none
         self.tab.delegate = self
         self.tab.dataSource = self
@@ -57,11 +59,25 @@ extension NBMainpageTabVw: UITableViewDelegate, UITableViewDataSource {
         }
 
         let model = dataSource[indexPath.row]
-        cell?.setData(imgs: model.imgs, title: model.title, subtitle: model.subtitle, distance: model.distance)
+        cell?.setData(imgs: model.imgs, title: model.title, subtitle: model.subtitle, distance: model.distance, hotvalue: model.hotCount)
         return cell!
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return self.dataSource[indexPath.row].cellHeight
+    }
+
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 120
     }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return NBMainpageHeaderVw(frame: CGRect(x: 0, y: 0, width: IHTUIConfig.aWeight, height: 120))
+    }
+
+
 }

@@ -56,13 +56,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8su-Rg-MeQ">
-                        <rect key="frame" x="94" y="25" width="456" height="19.5"/>
+                        <rect key="frame" x="94" y="25" width="436" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eag-7e-76e">
-                        <rect key="frame" x="94" y="55" width="456" height="17"/>
+                        <rect key="frame" x="94" y="55" width="436" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -74,10 +74,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uI2-qA-EWW">
-                        <rect key="frame" x="560" y="16" width="80" height="30"/>
+                        <rect key="frame" x="540" y="16" width="100" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="Jfc-IU-n0f"/>
-                            <constraint firstAttribute="width" constant="80" id="Lq7-Kx-O2w"/>
+                            <constraint firstAttribute="height" constant="20" id="Jfc-IU-n0f"/>
+                            <constraint firstAttribute="width" constant="100" id="Lq7-Kx-O2w"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -122,7 +122,7 @@
                 <outlet property="titleLb" destination="8su-Rg-MeQ" id="kEt-eq-v20"/>
                 <outlet property="topImg" destination="mdo-Wb-MFF" id="ZhE-U4-5ui"/>
             </connections>
-            <point key="canvasLocation" x="-115.94202898550725" y="132.25446428571428"/>
+            <point key="canvasLocation" x="-406" y="129"/>
         </tableViewCell>
     </objects>
 </document>

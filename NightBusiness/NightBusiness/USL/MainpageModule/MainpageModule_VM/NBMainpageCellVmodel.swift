@@ -23,9 +23,16 @@ class NBMainpageCellVmodel: NSObject {
     var distance: String = "30km"
 
     /// MAX IS 10
-    var hotCount: Float = 9.0
+    var hotCount: Double = 9.0
 
     var imgs: [String] = []
+
+    var cellHeight : CGFloat {
+        if imgs.count == 0 {
+            return 97
+        }
+        return 190
+    }
 
     init(model: NBMainpageListItemModel) {
         self.title = model.name

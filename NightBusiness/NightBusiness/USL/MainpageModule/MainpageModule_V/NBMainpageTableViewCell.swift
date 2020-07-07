@@ -41,6 +41,7 @@ class NBMainpageTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
         initVw()
     }
 
@@ -62,18 +63,26 @@ class NBMainpageTableViewCell: UITableViewCell {
 
         self.firstImg.layer.cornerRadius = 5
         self.firstImg.layer.masksToBounds = true
+        self.firstImg.layer.borderWidth = 0.5
+        self.firstImg.layer.borderColor = UIColor.groupTableViewBackground.cgColor
 
         self.secondImg.layer.cornerRadius = 5
         self.secondImg.layer.masksToBounds = true
+        self.secondImg.layer.borderWidth = 0.5
+        self.secondImg.layer.borderColor = UIColor.groupTableViewBackground.cgColor
 
         self.thirdImg.layer.cornerRadius = 5
         self.thirdImg.layer.masksToBounds = true
+        self.thirdImg.layer.borderWidth = 0.5
+        self.thirdImg.layer.borderColor = UIColor.groupTableViewBackground.cgColor
 
-        self.fourthImg.layer.cornerRadius = 5
-        self.fourthImg.layer.masksToBounds = true
+//        self.fourthImg.layer.cornerRadius = 5
+//        self.fourthImg.layer.masksToBounds = true
+//        self.fourthImg.layer.borderWidth = 0.5
+//        self.fourthImg.layer.borderColor = IHTUIConfig.mainThemeColor.cgColor
     }
 
-    func setData(imgs: [String], title: String, subtitle: String, distance: String) {
+    func setData(imgs: [String], title: String, subtitle: String, distance: String, hotvalue: Double) {
         self.titleLb.text = title
 
         self.subtitleLb.text = subtitle
@@ -93,6 +102,20 @@ class NBMainpageTableViewCell: UITableViewCell {
             self.thirdImg.alpha = 1
             self.fourthImg.alpha = 1
         }
+
+        for eachItem in 0 ..< imgs.count {
+            if eachItem == 0 {
+                self.firstImg.nbSetImg(url: imgs[eachItem])
+            }
+            if eachItem == 1 {
+                self.secondImg.nbSetImg(url: imgs[eachItem])
+            }
+            if eachItem == 2 {
+                self.thirdImg.nbSetImg(url: imgs[eachItem])
+            }
+        }
+
+        self.hotImg.setHotIcons(hotvalue: hotvalue)
     }
     
 }

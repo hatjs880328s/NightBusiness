@@ -39,4 +39,74 @@ extension UIImageView {
             self.sd_setImage(with: url, placeholderImage: UIImage(named: "addressbook_default_userimg"), completed: nil)
         }
     }
+
+    /// 设置图片网络或者本地
+    func nbSetImg(url: String) {
+        if url.contains("http") {
+            self.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "app_default_big_image"), options: SDWebImageOptions.continueInBackground, context: nil)
+        } else {
+            self.image = UIImage(named: url)
+        }
+    }
+
+    /// 设置热度值[height is 20]
+    func setHotIcons(hotvalue: Double) {
+
+        for i in 0 ... 4 {
+            if i  == 0 && hotvalue > 0 {
+                // 第一个
+                let first = UIImageView()
+                self.addSubview(first)
+                first.snp.makeConstraints { (make) in
+                    make.right.top.bottom.equalTo(0)
+                    make.height.equalTo(20)
+                }
+                first.image = UIImage(named: "mainpage_firstcell_hot")
+            }
+            if i  == 1 && hotvalue > 2 {
+                // 第一个
+                let second = UIImageView()
+                self.addSubview(second)
+                second.snp.makeConstraints { (make) in
+                    make.top.bottom.equalTo(0)
+                    make.right.equalTo(-20)
+                    make.height.equalTo(20)
+                }
+                second.image = UIImage(named: "mainpage_firstcell_hot")
+            }
+            if i  == 2 && hotvalue > 4 {
+                // 第一个
+                let third = UIImageView()
+                self.addSubview(third)
+                third.snp.makeConstraints { (make) in
+                    make.top.bottom.equalTo(0)
+                    make.right.equalTo(-40)
+                    make.height.equalTo(20)
+                }
+                third.image = UIImage(named: "mainpage_firstcell_hot")
+            }
+            if i  == 3 && hotvalue > 6 {
+                // 第一个
+                let fourth = UIImageView()
+                self.addSubview(fourth)
+                fourth.snp.makeConstraints { (make) in
+                    make.top.bottom.equalTo(0)
+                    make.right.equalTo(-60)
+                    make.height.equalTo(20)
+                }
+                fourth.image = UIImage(named: "mainpage_firstcell_hot")
+            }
+            if i  == 4 && hotvalue > 8 {
+                // 第一个
+                let fifth = UIImageView()
+                self.addSubview(fifth)
+                fifth.snp.makeConstraints { (make) in
+                    make.top.bottom.equalTo(0)
+                    make.right.equalTo(-80)
+                    make.height.equalTo(20)
+                }
+                fifth.image = UIImage(named: "mainpage_firstcell_hot")
+            }
+        }
+    }
 }

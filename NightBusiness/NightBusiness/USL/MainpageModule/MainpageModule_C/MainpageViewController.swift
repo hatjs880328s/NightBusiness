@@ -47,7 +47,7 @@ extension MainpageController {
         self.view.addSubview(self.tab)
         self.tab.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
-            make.top.equalTo(topVw.snp.bottom)
+            make.top.equalTo(topVw.snp.bottom).offset(-50)
             make.bottom.equalTo(0)
         }
     }

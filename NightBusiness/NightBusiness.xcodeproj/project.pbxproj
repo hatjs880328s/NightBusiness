@@ -20,6 +20,7 @@
 		560CEF2A24AF2406007A4558 /* NBMainpageCellVmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2924AF2406007A4558 /* NBMainpageCellVmodel.swift */; };
 		560CEF2D24AF24C9007A4558 /* NBMainpageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */; };
 		560CEF2E24AF24C9007A4558 /* NBMainpageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */; };
+		560F3CC924B4186000CD433C /* NBMainpageHeaderVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560F3CC824B4186000CD433C /* NBMainpageHeaderVw.swift */; };
 		56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */; };
 		56424FB024AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */; };
 		56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */; };
@@ -80,6 +81,7 @@
 		560CEF2924AF2406007A4558 /* NBMainpageCellVmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageCellVmodel.swift; sourceTree = "<group>"; };
 		560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageTableViewCell.swift; sourceTree = "<group>"; };
 		560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBMainpageTableViewCell.xib; sourceTree = "<group>"; };
+		560F3CC824B4186000CD433C /* NBMainpageHeaderVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageHeaderVw.swift; sourceTree = "<group>"; };
 		56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterUserNormalTableViewCell.swift; sourceTree = "<group>"; };
 		56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersoncenterUserNormalTableViewCell.xib; sourceTree = "<group>"; };
 		56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterLogoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				560CEF2724AF2392007A4558 /* NBMainpageTabVw.swift */,
 				560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */,
 				560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */,
+				560F3CC824B4186000CD433C /* NBMainpageHeaderVw.swift */,
 			);
 			path = MainpageModule_V;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				56C369D824AC738D00770439 /* IHTUIConfig.swift in Sources */,
 				560CEF2324AF09BB007A4558 /* MainpageVM.swift in Sources */,
 				56C3699924AC706F00770439 /* ViewController.swift in Sources */,
+				560F3CC924B4186000CD433C /* NBMainpageHeaderVw.swift in Sources */,
 				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,
 				560CEF2824AF2392007A4558 /* NBMainpageTabVw.swift in Sources */,
 				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
