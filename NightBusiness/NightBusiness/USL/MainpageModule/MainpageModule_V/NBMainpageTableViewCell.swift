@@ -75,11 +75,6 @@ class NBMainpageTableViewCell: UITableViewCell {
         self.thirdImg.layer.masksToBounds = true
         self.thirdImg.layer.borderWidth = 0.5
         self.thirdImg.layer.borderColor = UIColor.groupTableViewBackground.cgColor
-
-//        self.fourthImg.layer.cornerRadius = 5
-//        self.fourthImg.layer.masksToBounds = true
-//        self.fourthImg.layer.borderWidth = 0.5
-//        self.fourthImg.layer.borderColor = IHTUIConfig.mainThemeColor.cgColor
     }
 
     func setData(imgs: [String], title: String, subtitle: String, distance: String, hotvalue: Double) {

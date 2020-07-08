@@ -27,8 +27,6 @@ public class MainpageVM: NSObject {
 
     var dal: NBMainpageDAL = NBMainpageDAL()
 
-    var userLocation: TencentLBSLocation!
-
     override init() {
         super.init()
     }
@@ -50,7 +48,6 @@ extension MainpageVM {
             for eachItem in item {
                 let realitem = NBMainpageCellVmodel(model: eachItem)
                 realitem.hotCount = Double(arc4random() % 10)
-                realitem.distance = "\(arc4random() % 80)km"
                 result.append(realitem)
             }
             group.leave()
@@ -58,18 +55,30 @@ extension MainpageVM {
 
         group.enter()
         NBQMap.getInstance().updateLocationAction = { location  in
-            self.userLocation = location
+            NBGlobalUserManager.getInstance().getUserInfo().userlocationLaititude = location?.location.coordinate.latitude as! Double
+            NBGlobalUserManager.getInstance().getUserInfo().userlocationLongitude = location?.location.coordinate.longitude as! Double
             group.leave()
         }
         NBQMap.getInstance().startSingleLocation()
 
         group.notify(queue: DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive)) {
             // 定位完毕，数据请求完毕才会执行此处代码
+            // 1.计算每一个vmodel距离当前用户的距离
+            for eachitem in result {
+                eachitem.calculateDistance()
+            }
+            // 2.给他们排序
+            result = self.sortItems(items: result)
+            // 3.显示
+            GCDUtils.toMianThreadProgressSome {
+                self.dataSource = result
+            }
         }
     }
 
-    func sortItems() {
-        
+    /// 按照距离排序
+    func sortItems(items: [NBMainpageCellVmodel]) -> [NBMainpageCellVmodel] {
+        return IIMergeSort.sort(array: items)
     }
 }
 
