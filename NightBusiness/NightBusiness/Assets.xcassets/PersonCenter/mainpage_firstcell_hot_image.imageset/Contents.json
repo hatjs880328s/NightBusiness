@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "热度.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "热度 (1).png",
+      "filename" : "热度.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "热度 (2).png",
       "idiom" : "universal",
       "scale" : "3x"
     }

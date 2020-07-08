@@ -62,7 +62,7 @@ class NBMainpagetopVw: UIView {
         let locationBtn = UIImageView()
         self.addSubview(locationBtn)
         locationBtn.snp.makeConstraints { (make) in
-            make.width.height.equalTo(30)
+            make.width.height.equalTo(25)
             make.right.equalTo(-22)
             make.centerY.equalTo(nameLb.snp.centerY)
         }
@@ -70,6 +70,7 @@ class NBMainpagetopVw: UIView {
 
         locationBtn.tapActionsGesture { [weak self] in
             let con = MapModuleController()
+            con.inputPoints = (self?.ViewController() as? MainpageController)?.vm.dataSource ?? []
             con.hidesBottomBarWhenPushed = true
             self?.ViewController()?.navigationController?.pushViewController(con, animated: true)
         }

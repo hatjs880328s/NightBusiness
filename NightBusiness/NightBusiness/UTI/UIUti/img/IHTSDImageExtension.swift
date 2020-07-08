@@ -61,7 +61,7 @@ extension UIImageView {
                     make.right.top.bottom.equalTo(0)
                     make.height.equalTo(20)
                 }
-                first.image = UIImage(named: "mainpage_firstcell_hot")
+                first.image = UIImage(named: "mainpage_firstcell_hot_image")
             }
             if i  == 1 && hotvalue > 2 {
                 // 第一个
@@ -72,7 +72,7 @@ extension UIImageView {
                     make.right.equalTo(-20)
                     make.height.equalTo(20)
                 }
-                second.image = UIImage(named: "mainpage_firstcell_hot")
+                second.image = UIImage(named: "mainpage_firstcell_hot_image")
             }
             if i  == 2 && hotvalue > 4 {
                 // 第一个
@@ -83,7 +83,7 @@ extension UIImageView {
                     make.right.equalTo(-40)
                     make.height.equalTo(20)
                 }
-                third.image = UIImage(named: "mainpage_firstcell_hot")
+                third.image = UIImage(named: "mainpage_firstcell_hot_image")
             }
             if i  == 3 && hotvalue > 6 {
                 // 第一个
@@ -94,7 +94,7 @@ extension UIImageView {
                     make.right.equalTo(-60)
                     make.height.equalTo(20)
                 }
-                fourth.image = UIImage(named: "mainpage_firstcell_hot")
+                fourth.image = UIImage(named: "mainpage_firstcell_hot_image")
             }
             if i  == 4 && hotvalue > 8 {
                 // 第一个
@@ -105,7 +105,7 @@ extension UIImageView {
                     make.right.equalTo(-80)
                     make.height.equalTo(20)
                 }
-                fifth.image = UIImage(named: "mainpage_firstcell_hot")
+                fifth.image = UIImage(named: "mainpage_firstcell_hot_image")
             }
         }
     }
