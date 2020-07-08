@@ -6,5 +6,7 @@
 #import "UIImageView+WebCache.h"
 #import "MJExtension.h"
 #import "QMapKit/QMapKit.h"
+#import "QMapKit/QMSSearchKit.h"
+
 @import TencentLBS;
 @import IISwiftBaseUti;

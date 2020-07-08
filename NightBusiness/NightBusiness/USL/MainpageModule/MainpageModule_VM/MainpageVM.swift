@@ -41,6 +41,7 @@ extension MainpageVM {
 
     func getListData() {
         let group = DispatchGroup()
+        /// 获取列表数据
         group.enter()
         var result = [NBMainpageCellVmodel]()
         _ = NBMainpageDAL.getMainpageListData(cityid: "").subscribe(onNext: { element in
@@ -53,14 +54,16 @@ extension MainpageVM {
             group.leave()
         })
 
+        /// 获取地理位置信息
         group.enter()
         NBQMap.getInstance().updateLocationAction = { location  in
-            NBGlobalUserManager.getInstance().getUserInfo().userlocationLaititude = location?.location.coordinate.latitude as! Double
-            NBGlobalUserManager.getInstance().getUserInfo().userlocationLongitude = location?.location.coordinate.longitude as! Double
+            NBGlobalUserManager.getInstance().getUserInfo().userlocationLaititude = location?.location.coordinate.latitude ?? 0
+            NBGlobalUserManager.getInstance().getUserInfo().userlocationLongitude = location?.location.coordinate.longitude ?? 0
             group.leave()
         }
         NBQMap.getInstance().startSingleLocation()
 
+        /// 处理结果
         group.notify(queue: DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive)) {
             // 定位完毕，数据请求完毕才会执行此处代码
             // 1.计算每一个vmodel距离当前用户的距离
@@ -73,6 +76,11 @@ extension MainpageVM {
             GCDUtils.toMianThreadProgressSome {
                 self.dataSource = result
             }
+            // 4.逆地理处理
+            NBQMap.getInstance().locationGeoAction = { result in
+                print(result)
+            }
+            NBQMap.getInstance().changeLocation2Address(location: CLLocationCoordinate2D(latitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLaititude, longitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLongitude))
         }
     }
 

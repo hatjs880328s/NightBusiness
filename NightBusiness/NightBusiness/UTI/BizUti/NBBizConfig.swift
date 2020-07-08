@@ -30,6 +30,7 @@ class NBBizConfig: NSObject {
 
         /// map
         QMapServices.shared().apiKey = NBBizConfig.mapKey
+        QMSSearchServices.shared().apiKey = NBBizConfig.mapKey
     }
 
     private override init() {

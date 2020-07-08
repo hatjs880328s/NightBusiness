@@ -33,18 +33,30 @@ class NBQMap: NSObject {
 
     var manager: TencentLBSLocationManager = TencentLBSLocationManager()
 
+    var searchManager: QMSSearcher!
+
+    /// 位置更新回调
     var updateLocationAction: ((_ location: TencentLBSLocation?) -> Void)?
+
+    /// 逆地理位置回调
+    var locationGeoAction: ((_ add: QMSReverseGeoCodeSearchResult) -> Void)?
 
     /// 启动配置
     private func configManager() {
-        manager.delegate = self
+        manager.delegate = NBQMap.instance
         manager.apiKey = NBBizConfig.mapKey
         manager.requestLevel = .name
         let auth = CLLocationManager.authorizationStatus()
         if auth == .notDetermined {
             manager.requestWhenInUseAuthorization()
         }
+
+        self.searchManager = QMSSearcher()
+        self.searchManager.delegate = self
     }
+}
+
+extension NBQMap: TencentLBSLocationManagerDelegate {
 
     /// 单次定位
     func startSingleLocation() {
@@ -59,9 +71,6 @@ class NBQMap: NSObject {
     func startSerialLocation() {
         self.manager.startUpdatingLocation()
     }
-}
-
-extension NBQMap: TencentLBSLocationManagerDelegate {
 
     /// 位置更新
     func tencentLBSLocationManager(_ manager: TencentLBSLocationManager, didUpdate location: TencentLBSLocation) {
@@ -103,6 +112,44 @@ extension NBQMap {
     func calculateTwopointsDistance(fis: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Double {
         let dis = QMetersBetweenCoordinates(fis, rhs)
         return dis
+    }
+}
+
+/// 逆地址解析 location -> address
+extension NBQMap: QMSSearchDelegate {
+
+    /// 发起逆地理位置处理
+    func changeLocation2Address(location: CLLocationCoordinate2D) {
+        let options = QMSReverseGeoCodeSearchOption()
+        options.setLocationWithCenter(location)
+        options.get_poi = true
+        options.poi_options = "page_size=5;page_index=1"
+        self.searchManager.search(with: options)
+
+
+        let opt = QMSGeoCodeSearchOption()
+        opt.address = "北京市海淀区彩和坊路海淀西大街74号"
+        opt.region = "北京"
+        self.searchManager.search(with: opt)
+    }
+
+    /// 回调函数
+    func search(with reverseGeoCodeSearchOption: QMSReverseGeoCodeSearchOption, didReceive reverseGeoCodeSearchResult: QMSReverseGeoCodeSearchResult) {
+        let result = reverseGeoCodeSearchResult
+        print(result)
+        locationGeoAction?(result)
+    }
+
+    func search(with geoCodeSearchOption: QMSGeoCodeSearchOption, didReceive geoCodeSearchResult: QMSGeoCodeSearchResult) {
+        print("fdsa")
+    }
+
+    func search(with poiSearchOption: QMSPoiSearchOption, didReceive poiSearchResult: QMSPoiSearchResult) {
+        print("fdasfas")
+    }
+
+    func search(with searchOption: QMSSearchOption, didFailWithError error: Error) {
+        print("逆地理出错了")
     }
 }
 
