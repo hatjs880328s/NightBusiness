@@ -24,6 +24,7 @@
 		560CEF2D24AF24C9007A4558 /* NBMainpageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */; };
 		560CEF2E24AF24C9007A4558 /* NBMainpageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */; };
 		560F3CC924B4186000CD433C /* NBMainpageHeaderVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560F3CC824B4186000CD433C /* NBMainpageHeaderVw.swift */; };
+		56250CBC24B5B59700D35FF8 /* NBMAPGeoUti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56250CBB24B5B59700D35FF8 /* NBMAPGeoUti.swift */; };
 		56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */; };
 		56424FB024AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */; };
 		56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */; };
@@ -92,6 +93,7 @@
 		560CEF2B24AF24C9007A4558 /* NBMainpageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageTableViewCell.swift; sourceTree = "<group>"; };
 		560CEF2C24AF24C9007A4558 /* NBMainpageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBMainpageTableViewCell.xib; sourceTree = "<group>"; };
 		560F3CC824B4186000CD433C /* NBMainpageHeaderVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageHeaderVw.swift; sourceTree = "<group>"; };
+		56250CBB24B5B59700D35FF8 /* NBMAPGeoUti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMAPGeoUti.swift; sourceTree = "<group>"; };
 		56424FAD24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterUserNormalTableViewCell.swift; sourceTree = "<group>"; };
 		56424FAE24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersoncenterUserNormalTableViewCell.xib; sourceTree = "<group>"; };
 		56424FB124AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersoncenterLogoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				569D4D3D24B4773C00452C60 /* NBQMap.swift */,
+				56250CBB24B5B59700D35FF8 /* NBMAPGeoUti.swift */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -708,6 +711,7 @@
 				569D4D4C24B49F6600452C60 /* NBGlobalUserInfo.swift in Sources */,
 				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,
 				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
+				56250CBC24B5B59700D35FF8 /* NBMAPGeoUti.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -131,6 +131,10 @@ extension NBQMap: QMSSearchDelegate {
         opt.address = "北京市海淀区彩和坊路海淀西大街74号"
         opt.region = "北京"
         self.searchManager.search(with: opt)
+
+        NBMAPGeoUti().getGeo(location: location).subscribe(onNext: {
+            print($0)
+        })
     }
 
     /// 回调函数

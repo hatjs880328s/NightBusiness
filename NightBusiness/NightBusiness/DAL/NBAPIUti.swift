@@ -16,4 +16,6 @@ import UIKit
 class NBAPIUti: NSObject {
     
     static let mainpagelistAPI: String = "https://new3.icity24.cn/night-economy-jinan/life/findByCondition"
+
+    static let mapGeoApi: String = "https://apis.map.qq.com/ws/geocoder/v1/?location=:lat,:lng&key=:key"
 }

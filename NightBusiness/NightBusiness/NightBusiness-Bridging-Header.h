@@ -10,3 +10,5 @@
 
 @import TencentLBS;
 @import IISwiftBaseUti;
+@import HandyJSON;
+@import IIHTTPRequest;
