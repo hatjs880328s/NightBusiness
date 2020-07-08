@@ -21,7 +21,9 @@ class NBMAPGeoUti: NSObject {
         let url = NBAPIUti.mapGeoApi.replace(find: ":lat", replaceStr: "\(location.latitude)").replace(find: ":lng", replaceStr: "\(location.longitude)").replace(find: ":key", replaceStr: "\(NBBizConfig.mapKey)")
         return Observable<NBMAPGeoModel?>.create { (observer) -> Disposable in
             request(url, method: HTTPMethod.get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { (data) in
-                print(data.value)
+                let item = NBMAPGeoModel.deserialize(from: data.value as? NSDictionary)
+                observer.onNext(item)
+                observer.onCompleted()
             }
             return Disposables.create()
         }
@@ -34,7 +36,7 @@ class NBMAPGeoModel: NSObject, HandyJSON {
 
     var message: String = ""
 
-    var result: NBMAPGeoDataComModel!
+    var result: NBMAPGeoDataModel!
 
     required override init() {
         super.init()

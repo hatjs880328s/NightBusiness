@@ -78,7 +78,7 @@ extension MainpageVM {
             }
             // 4.逆地理处理
             NBQMap.getInstance().locationGeoAction = { result in
-                print(result)
+                NBGlobalUserManager.getInstance().getUserInfo().userCity = result.result.address_component.city
             }
             NBQMap.getInstance().changeLocation2Address(location: CLLocationCoordinate2D(latitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLaititude, longitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLongitude))
         }
