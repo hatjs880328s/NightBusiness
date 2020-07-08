@@ -25,6 +25,9 @@ public class MainpageVM: NSObject {
     /// DATA RELOAD ACTION
     var reloadAction: ( (_ zerocount: Bool) -> Void)?
 
+    /// title change action
+    var titleChangeAction: ((_ cityname: String) -> Void)?
+
     var dal: NBMainpageDAL = NBMainpageDAL()
 
     override init() {
@@ -79,6 +82,7 @@ extension MainpageVM {
             // 4.逆地理处理
             NBQMap.getInstance().locationGeoAction = { result in
                 NBGlobalUserManager.getInstance().getUserInfo().userCity = result.result.address_component.city
+                self.titleChangeAction?(result.result.address_component.city)
             }
             NBQMap.getInstance().changeLocation2Address(location: CLLocationCoordinate2D(latitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLaititude, longitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLongitude))
         }

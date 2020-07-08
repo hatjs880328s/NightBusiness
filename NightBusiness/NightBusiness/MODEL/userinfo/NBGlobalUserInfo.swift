@@ -16,7 +16,7 @@ import UIKit
 /// 用户信息
 class NBGlobalUserInfo: NSObject {
 
-    @objc var userid: String = ""
+    @objc var userid: String = NSUUID().uuidString
 
     @objc var username: String = ""
 

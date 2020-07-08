@@ -18,6 +18,9 @@ class MainpageController: IHTBaseSwiftViewController {
     let vm = MainpageVM()
 
     let tab = NBMainpageTabVw()
+
+    var topVw: NBMainpagetopVw!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initVw()
@@ -43,7 +46,7 @@ class MainpageController: IHTBaseSwiftViewController {
 extension MainpageController {
 
     func initVw() {
-        let topVw = NBMainpagetopVw(frame: CGRect.zero, fatherVw: self.view)
+        topVw = NBMainpagetopVw(frame: CGRect.zero, fatherVw: self.view)
         self.view.addSubview(self.tab)
         self.tab.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
@@ -64,6 +67,10 @@ extension MainpageController {
         }
 
         self.vm.getListData()
+
+        self.vm.titleChangeAction = { [weak self] title in
+            self?.topVw.setData(name: title)
+        }
     }
 
 }
