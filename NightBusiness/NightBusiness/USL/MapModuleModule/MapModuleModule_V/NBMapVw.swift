@@ -22,6 +22,8 @@ class NBMapVw: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         initVw()
+
+        self.hero.id = NSStringFromClass(NBMainpagetopVw.self)
     }
 
     required init?(coder: NSCoder) {

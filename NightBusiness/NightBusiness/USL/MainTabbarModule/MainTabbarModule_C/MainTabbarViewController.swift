@@ -18,7 +18,7 @@ class MainTabbarController: UITabBarController {
 
     let mainpage: UINavigationController = UINavigationController(rootViewController: MainpageController())
 
-    let invitepage: UINavigationController = UINavigationController(rootViewController: UIViewController())
+    let invitepage: UINavigationController = UINavigationController(rootViewController: AddPointController())
 
     let minepage: UINavigationController = UINavigationController(rootViewController: PersonCenterController())
 

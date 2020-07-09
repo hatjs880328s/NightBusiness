@@ -12,3 +12,4 @@
 @import IISwiftBaseUti;
 @import HandyJSON;
 @import IIHTTPRequest;
+@import Hero;

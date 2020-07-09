@@ -45,26 +45,23 @@ extension MapModuleController {
 
     func initVw() {
         self.view.addSubview(self.mapVw)
-        self.mapVw.snp.makeConstraints { (make) in
-            make.left.right.bottom.top.equalTo(0)
-        }
+        self.mapVw.frame = self.view.frame
 
         let backItem = UIButton()
         self.view.addSubview(backItem)
         backItem.snp.makeConstraints { (make) in
             make.left.equalTo(16)
             make.top.equalTo(25)
-            make.width.height.equalTo(50)
+            make.width.height.equalTo(40)
         }
-        backItem.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        backItem.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         backItem.setImage(UIImage(named: "app_backnavi"), for: UIControl.State.normal)
         backItem.tapActionsGesture { [weak self] in
-            self?.navigationController?.popViewController(animated: true)
+            self?.dismiss(animated: true, completion: nil)
         }
         backItem.backgroundColor = IHTUIConfig.whiteColor
         backItem.layer.cornerRadius = 4
         backItem.layer.masksToBounds = true
-        
     }
 
 }

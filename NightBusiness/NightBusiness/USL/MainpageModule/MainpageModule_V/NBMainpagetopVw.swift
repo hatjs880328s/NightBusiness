@@ -56,7 +56,7 @@ class NBMainpagetopVw: UIView {
 
         self.nameLb.textAlignment = .center
 
-        self.nameLb.text = "City JINAN"
+        self.nameLb.text = "..."
 
         /// 定位btn
         let locationBtn = UIImageView()
@@ -67,12 +67,14 @@ class NBMainpagetopVw: UIView {
             make.centerY.equalTo(nameLb.snp.centerY)
         }
         locationBtn.image = UIImage(named: "mainpage_location")
-
+        locationBtn.hero.id = NSStringFromClass(NBMainpagetopVw.self)
         locationBtn.tapActionsGesture { [weak self] in
             let con = MapModuleController()
             con.inputPoints = (self?.ViewController() as? MainpageController)?.vm.dataSource ?? []
             con.hidesBottomBarWhenPushed = true
-            self?.ViewController()?.navigationController?.pushViewController(con, animated: true)
+            con.hero.isEnabled = true
+            con.modalPresentationStyle = .fullScreen
+            self?.ViewController()?.present(con, animated: true, completion: nil)
         }
     }
 

@@ -32,6 +32,9 @@
 		565AB5C924B2D02C0092B22C /* NBMainpageDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5C824B2D02C0092B22C /* NBMainpageDAL.swift */; };
 		565AB5CB24B2D2630092B22C /* NBMainpageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */; };
 		565AB5CD24B2D3610092B22C /* NBAPIUti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565AB5CC24B2D3610092B22C /* NBAPIUti.swift */; };
+		567955F624B5F7370061C6BE /* AddPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567955F124B5F7370061C6BE /* AddPointViewController.swift */; };
+		567955F724B5F7370061C6BE /* AddPointVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567955F324B5F7370061C6BE /* AddPointVM.swift */; };
+		567955FA24B5F74E0061C6BE /* NBAddpointTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567955F924B5F74E0061C6BE /* NBAddpointTwoViewController.swift */; };
 		569D4D3824B4712D00452C60 /* TencentLBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3724B4712D00452C60 /* TencentLBS.framework */; };
 		569D4D3B24B4762300452C60 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */; };
 		569D4D3E24B4773C00452C60 /* NBQMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D4D3D24B4773C00452C60 /* NBQMap.swift */; };
@@ -101,6 +104,9 @@
 		565AB5C824B2D02C0092B22C /* NBMainpageDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageDAL.swift; sourceTree = "<group>"; };
 		565AB5CA24B2D2630092B22C /* NBMainpageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBMainpageListModel.swift; sourceTree = "<group>"; };
 		565AB5CC24B2D3610092B22C /* NBAPIUti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAPIUti.swift; sourceTree = "<group>"; };
+		567955F124B5F7370061C6BE /* AddPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPointViewController.swift; sourceTree = "<group>"; };
+		567955F324B5F7370061C6BE /* AddPointVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPointVM.swift; sourceTree = "<group>"; };
+		567955F924B5F74E0061C6BE /* NBAddpointTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAddpointTwoViewController.swift; sourceTree = "<group>"; };
 		569D4D3724B4712D00452C60 /* TencentLBS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentLBS.framework; sourceTree = "<group>"; };
 		569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		569D4D3D24B4773C00452C60 /* NBQMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBQMap.swift; sourceTree = "<group>"; };
@@ -278,6 +284,40 @@
 			path = MainpageModule_VM;
 			sourceTree = "<group>";
 		};
+		567955EF24B5F7370061C6BE /* AddPointModule */ = {
+			isa = PBXGroup;
+			children = (
+				567955F024B5F7370061C6BE /* AddPointModule_C */,
+				567955F224B5F7370061C6BE /* AddPointModule_VM */,
+				567955F424B5F7370061C6BE /* AddPointModule_V */,
+			);
+			path = AddPointModule;
+			sourceTree = "<group>";
+		};
+		567955F024B5F7370061C6BE /* AddPointModule_C */ = {
+			isa = PBXGroup;
+			children = (
+				567955F124B5F7370061C6BE /* AddPointViewController.swift */,
+				567955F924B5F74E0061C6BE /* NBAddpointTwoViewController.swift */,
+			);
+			path = AddPointModule_C;
+			sourceTree = "<group>";
+		};
+		567955F224B5F7370061C6BE /* AddPointModule_VM */ = {
+			isa = PBXGroup;
+			children = (
+				567955F324B5F7370061C6BE /* AddPointVM.swift */,
+			);
+			path = AddPointModule_VM;
+			sourceTree = "<group>";
+		};
+		567955F424B5F7370061C6BE /* AddPointModule_V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddPointModule_V;
+			sourceTree = "<group>";
+		};
 		569D4D3624B4712300452C60 /* LIB */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +430,7 @@
 		56C369C624AC725F00770439 /* USL */ = {
 			isa = PBXGroup;
 			children = (
+				567955EF24B5F7370061C6BE /* AddPointModule */,
 				5601B47B24B4492E006C9D14 /* MapModuleModule */,
 				560CEF1A24AF09BB007A4558 /* MainpageModule */,
 				560CEF0D24AF02DA007A4558 /* MainTabbarModule */,
@@ -690,6 +731,8 @@
 				56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */,
 				560CEF2824AF2392007A4558 /* NBMainpageTabVw.swift in Sources */,
 				56C3699524AC706F00770439 /* AppDelegate.swift in Sources */,
+				567955F624B5F7370061C6BE /* AddPointViewController.swift in Sources */,
+				567955FA24B5F74E0061C6BE /* NBAddpointTwoViewController.swift in Sources */,
 				565AB5CB24B2D2630092B22C /* NBMainpageListModel.swift in Sources */,
 				560BC1D624B305AF00DA7E59 /* IHTImageUti.m in Sources */,
 				56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */,
@@ -711,6 +754,7 @@
 				569D4D4C24B49F6600452C60 /* NBGlobalUserInfo.swift in Sources */,
 				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,
 				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
+				567955F724B5F7370061C6BE /* AddPointVM.swift in Sources */,
 				56250CBC24B5B59700D35FF8 /* NBMAPGeoUti.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
