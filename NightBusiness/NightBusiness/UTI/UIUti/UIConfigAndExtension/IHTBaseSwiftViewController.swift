@@ -125,4 +125,14 @@ class IHTBaseSwiftViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
 
+    /// 隐藏导航栏下面的横线
+    func hideTABBarLine() {
+        Utilities.findHairlineImageViewUnder(self.navigationController?.navigationBar)?.isHidden = true
+    }
+
+    /// 像是导航栏下面的横线
+    func showTABBarLine() {
+        Utilities.findHairlineImageViewUnder(self.navigationController?.navigationBar)?.isHidden = false
+    }
+
 }

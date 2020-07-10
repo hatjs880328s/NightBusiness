@@ -35,6 +35,9 @@
 		567955F624B5F7370061C6BE /* AddPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567955F124B5F7370061C6BE /* AddPointViewController.swift */; };
 		567955F724B5F7370061C6BE /* AddPointVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567955F324B5F7370061C6BE /* AddPointVM.swift */; };
 		567955FA24B5F74E0061C6BE /* NBAddpointTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567955F924B5F74E0061C6BE /* NBAddpointTwoViewController.swift */; };
+		5688C35524B8044D00311FE4 /* IIWaitAniVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688C35224B8044D00311FE4 /* IIWaitAniVw.swift */; };
+		5688C35624B8044D00311FE4 /* LoopShowPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688C35424B8044D00311FE4 /* LoopShowPic.swift */; };
+		5688C35B24B8053300311FE4 /* NBPointDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688C35A24B8053300311FE4 /* NBPointDetailModel.swift */; };
 		569D4D3824B4712D00452C60 /* TencentLBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3724B4712D00452C60 /* TencentLBS.framework */; };
 		569D4D3B24B4762300452C60 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */; };
 		569D4D3E24B4773C00452C60 /* NBQMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D4D3D24B4773C00452C60 /* NBQMap.swift */; };
@@ -51,6 +54,8 @@
 		56C369D324AC728500770439 /* PersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369CF24AC728500770439 /* PersonCenterViewController.swift */; };
 		56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */; };
 		56C369D824AC738D00770439 /* IHTUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C369D724AC738D00770439 /* IHTUIConfig.swift */; };
+		56CC1D5524B706E000C2D432 /* UIColor+IMPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1D5324B706E000C2D432 /* UIColor+IMPKit.m */; };
+		56CC1D5C24B70A0F00C2D432 /* IIShareSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1D5B24B70A0F00C2D432 /* IIShareSDK.swift */; };
 		56DCADD424AC7C6C00D8E69E /* NBPersonCenterVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCADD324AC7C6C00D8E69E /* NBPersonCenterVModel.swift */; };
 		56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCADD524AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift */; };
 		56DCADD824AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DCADD624AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib */; };
@@ -107,6 +112,9 @@
 		567955F124B5F7370061C6BE /* AddPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPointViewController.swift; sourceTree = "<group>"; };
 		567955F324B5F7370061C6BE /* AddPointVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPointVM.swift; sourceTree = "<group>"; };
 		567955F924B5F74E0061C6BE /* NBAddpointTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAddpointTwoViewController.swift; sourceTree = "<group>"; };
+		5688C35224B8044D00311FE4 /* IIWaitAniVw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIWaitAniVw.swift; sourceTree = "<group>"; };
+		5688C35424B8044D00311FE4 /* LoopShowPic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopShowPic.swift; sourceTree = "<group>"; };
+		5688C35A24B8053300311FE4 /* NBPointDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPointDetailModel.swift; sourceTree = "<group>"; };
 		569D4D3724B4712D00452C60 /* TencentLBS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentLBS.framework; sourceTree = "<group>"; };
 		569D4D3A24B4762300452C60 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		569D4D3D24B4773C00452C60 /* NBQMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBQMap.swift; sourceTree = "<group>"; };
@@ -129,6 +137,9 @@
 		56C369CF24AC728500770439 /* PersonCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterViewController.swift; sourceTree = "<group>"; };
 		56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTBaseSwiftViewController.swift; sourceTree = "<group>"; };
 		56C369D724AC738D00770439 /* IHTUIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTUIConfig.swift; sourceTree = "<group>"; };
+		56CC1D5324B706E000C2D432 /* UIColor+IMPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+IMPKit.m"; sourceTree = "<group>"; };
+		56CC1D5424B706E000C2D432 /* UIColor+IMPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+IMPKit.h"; sourceTree = "<group>"; };
+		56CC1D5B24B70A0F00C2D432 /* IIShareSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIShareSDK.swift; sourceTree = "<group>"; };
 		56DCADD324AC7C6C00D8E69E /* NBPersonCenterVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersonCenterVModel.swift; sourceTree = "<group>"; };
 		56DCADD524AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBPersonCenterUserTableViewCell.swift; sourceTree = "<group>"; };
 		56DCADD624AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBPersonCenterUserTableViewCell.xib; sourceTree = "<group>"; };
@@ -318,6 +329,30 @@
 			path = AddPointModule_V;
 			sourceTree = "<group>";
 		};
+		5688C35124B8044D00311FE4 /* IIWaitAniVw */ = {
+			isa = PBXGroup;
+			children = (
+				5688C35224B8044D00311FE4 /* IIWaitAniVw.swift */,
+			);
+			path = IIWaitAniVw;
+			sourceTree = "<group>";
+		};
+		5688C35324B8044D00311FE4 /* LOOPShowPic */ = {
+			isa = PBXGroup;
+			children = (
+				5688C35424B8044D00311FE4 /* LoopShowPic.swift */,
+			);
+			path = LOOPShowPic;
+			sourceTree = "<group>";
+		};
+		5688C35724B804C900311FE4 /* pointdetail */ = {
+			isa = PBXGroup;
+			children = (
+				5688C35A24B8053300311FE4 /* NBPointDetailModel.swift */,
+			);
+			path = pointdetail;
+			sourceTree = "<group>";
+		};
 		569D4D3624B4712300452C60 /* LIB */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +477,7 @@
 		56C369C724AC726500770439 /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
+				5688C35724B804C900311FE4 /* pointdetail */,
 				569D4D4A24B49F5600452C60 /* userinfo */,
 				569D4D4924B49F4600452C60 /* mainpage */,
 			);
@@ -503,12 +539,33 @@
 		56C369D924AC73D400770439 /* UIUti */ = {
 			isa = PBXGroup;
 			children = (
+				5688C35124B8044D00311FE4 /* IIWaitAniVw */,
+				5688C35324B8044D00311FE4 /* LOOPShowPic */,
+				56CC1D5A24B70A0F00C2D432 /* ShareSDK */,
+				56CC1D5824B709CF00C2D432 /* UIConfigAndExtension */,
 				569D4D3C24B4773100452C60 /* map */,
 				560BC1D024B3059900DA7E59 /* img */,
-				56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */,
-				56C369D724AC738D00770439 /* IHTUIConfig.swift */,
 			);
 			path = UIUti;
+			sourceTree = "<group>";
+		};
+		56CC1D5824B709CF00C2D432 /* UIConfigAndExtension */ = {
+			isa = PBXGroup;
+			children = (
+				56C369D524AC734800770439 /* IHTBaseSwiftViewController.swift */,
+				56C369D724AC738D00770439 /* IHTUIConfig.swift */,
+				56CC1D5424B706E000C2D432 /* UIColor+IMPKit.h */,
+				56CC1D5324B706E000C2D432 /* UIColor+IMPKit.m */,
+			);
+			path = UIConfigAndExtension;
+			sourceTree = "<group>";
+		};
+		56CC1D5A24B70A0F00C2D432 /* ShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				56CC1D5B24B70A0F00C2D432 /* IIShareSDK.swift */,
+			);
+			path = ShareSDK;
 			sourceTree = "<group>";
 		};
 		56DCADDD24AC8AF200D8E69E /* BizUti */ = {
@@ -736,6 +793,7 @@
 				565AB5CB24B2D2630092B22C /* NBMainpageListModel.swift in Sources */,
 				560BC1D624B305AF00DA7E59 /* IHTImageUti.m in Sources */,
 				56424FB324AD8DBD000BEAFC /* NBPersoncenterLogoutTableViewCell.swift in Sources */,
+				5688C35B24B8053300311FE4 /* NBPointDetailModel.swift in Sources */,
 				56424FAF24AD8953000BEAFC /* NBPersoncenterUserNormalTableViewCell.swift in Sources */,
 				560CEF2524AF0AD7007A4558 /* NBMainpagetopVw.swift in Sources */,
 				56DCADD424AC7C6C00D8E69E /* NBPersonCenterVModel.swift in Sources */,
@@ -743,17 +801,21 @@
 				560CEF2224AF09BB007A4558 /* MainpageViewController.swift in Sources */,
 				56C369D224AC728500770439 /* PersonCenterVM.swift in Sources */,
 				560CEF1624AF02DA007A4558 /* MainTabbarViewController.swift in Sources */,
+				5688C35624B8044D00311FE4 /* LoopShowPic.swift in Sources */,
 				560CEF2D24AF24C9007A4558 /* NBMainpageTableViewCell.swift in Sources */,
 				560CEF2A24AF2406007A4558 /* NBMainpageCellVmodel.swift in Sources */,
+				56CC1D5C24B70A0F00C2D432 /* IIShareSDK.swift in Sources */,
 				560CEF1524AF02DA007A4558 /* MainTabbarVM.swift in Sources */,
 				56DCADD724AC7DBE00D8E69E /* NBPersonCenterUserTableViewCell.swift in Sources */,
 				56DCADDB24AC841800D8E69E /* NBPersonCenterGroupTableViewCell.swift in Sources */,
 				560BC1D524B305AF00DA7E59 /* IHTSDImageExtension.swift in Sources */,
 				569D4D3E24B4773C00452C60 /* NBQMap.swift in Sources */,
 				565AB5CD24B2D3610092B22C /* NBAPIUti.swift in Sources */,
+				5688C35524B8044D00311FE4 /* IIWaitAniVw.swift in Sources */,
 				569D4D4C24B49F6600452C60 /* NBGlobalUserInfo.swift in Sources */,
 				56C369D624AC734800770439 /* IHTBaseSwiftViewController.swift in Sources */,
 				56C3699724AC706F00770439 /* SceneDelegate.swift in Sources */,
+				56CC1D5524B706E000C2D432 /* UIColor+IMPKit.m in Sources */,
 				567955F724B5F7370061C6BE /* AddPointVM.swift in Sources */,
 				56250CBC24B5B59700D35FF8 /* NBMAPGeoUti.swift in Sources */,
 			);

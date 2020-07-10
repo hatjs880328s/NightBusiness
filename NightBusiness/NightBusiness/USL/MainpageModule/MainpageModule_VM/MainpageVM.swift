@@ -43,6 +43,7 @@ public class MainpageVM: NSObject {
 extension MainpageVM {
 
     func getListData() {
+        IIWaitAniVw.getInstace().showSelf()
         let group = DispatchGroup()
         /// 获取列表数据
         group.enter()
@@ -78,6 +79,7 @@ extension MainpageVM {
             // 3.显示
             GCDUtils.toMianThreadProgressSome {
                 self.dataSource = result
+                IIWaitAniVw.getInstace().hideSelf()
             }
             // 4.逆地理处理
             NBQMap.getInstance().locationGeoAction = { result in
@@ -85,6 +87,8 @@ extension MainpageVM {
                 self.titleChangeAction?(result.result.address_component.city)
             }
             NBQMap.getInstance().changeLocation2Address(location: CLLocationCoordinate2D(latitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLaititude, longitude: NBGlobalUserManager.getInstance().getUserInfo().userlocationLongitude))
+
+
         }
     }
 

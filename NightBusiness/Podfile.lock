@@ -1,5 +1,8 @@
 PODS:
   - Bugly (2.5.0)
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
   - Differentiator (4.0.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
@@ -306,6 +309,39 @@ PODS:
     - IISwiftBaseUti
   - MBProgressHUD (1.2.0)
   - MJExtension (3.2.1)
+  - mob_sharesdk (4.3.8):
+    - mob_sharesdk/ShareSDK (= 4.3.8)
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDK (4.3.8):
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKConfigFile (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKExtension (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/AliPaySocial (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/DingTalk (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/SMS (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/WeChat (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKUI (4.3.8):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - MOBFoundation (3.2.16)
   - OpenSSL-Universal (1.0.2.17)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
@@ -324,10 +360,10 @@ PODS:
   - SwiftyJSON (5.0.0)
   - TencentMap-SDK (4.3.2)
   - Toast (4.0.0)
-  - WechatOpenSDK (1.8.6.2)
 
 DEPENDENCIES:
   - Bugly (= 2.5.0)
+  - Charts
   - FMDB (= 2.6.2)
   - HandyJSON (= 5.0.0)
   - Hero
@@ -344,6 +380,16 @@ DEPENDENCIES:
   - IIUIAndBizConfig
   - MBProgressHUD (= 1.2.0)
   - MJExtension (= 3.2.1)
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKConfigFile
+  - mob_sharesdk/ShareSDKExtension
+  - mob_sharesdk/ShareSDKPlatforms/AliPaySocial
+  - mob_sharesdk/ShareSDKPlatforms/DingTalk
+  - mob_sharesdk/ShareSDKPlatforms/QQ
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo
+  - mob_sharesdk/ShareSDKPlatforms/SMS
+  - mob_sharesdk/ShareSDKPlatforms/WeChat
+  - mob_sharesdk/ShareSDKUI
   - RxCocoa (= 5.0.0)
   - RxRelay (= 5.0.0)
   - RxSwift (= 5.0.0)
@@ -351,11 +397,11 @@ DEPENDENCIES:
   - SnapKit (= 4.2.0)
   - SwiftyJSON (= 5.0.0)
   - TencentMap-SDK
-  - WechatOpenSDK (= 1.8.6.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Bugly
+    - Charts
     - Differentiator
     - FMDB
     - HandyJSON
@@ -373,6 +419,8 @@ SPEC REPOS:
     - IIUIAndBizConfig
     - MBProgressHUD
     - MJExtension
+    - mob_sharesdk
+    - MOBFoundation
     - OpenSSL-Universal
     - RxCocoa
     - RxDataSources
@@ -383,10 +431,10 @@ SPEC REPOS:
     - SwiftyJSON
     - TencentMap-SDK
     - Toast
-    - WechatOpenSDK
 
 SPEC CHECKSUMS:
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
@@ -404,6 +452,8 @@ SPEC CHECKSUMS:
   IIUIAndBizConfig: 66d5e9c14dee6a3bd660cbb3430cec863c1f3d97
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  mob_sharesdk: 7689cb066326e50d99c9fb552d5d608ae3b63025
+  MOBFoundation: 204917a048271f7300434a2067ce2d4d149d124b
   OpenSSL-Universal: ff04c2e6befc3f1247ae039e60c93f76345b3b5a
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
@@ -414,8 +464,7 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TencentMap-SDK: 385e59541a65ea6ed1a38ae08f29d775ccf6e0a8
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  WechatOpenSDK: 8b3ba4239193d1112205c139c94e21934e8f369a
 
-PODFILE CHECKSUM: ec169c4c77a58ad3c7c0cfc9fe767f1ef325158e
+PODFILE CHECKSUM: c460a8fd5466a0eaad177bb6f5c18057695d0d33
 
 COCOAPODS: 1.7.1

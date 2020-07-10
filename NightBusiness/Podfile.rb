@@ -34,9 +34,20 @@ target 'NightBusiness' do
 
     # 高德地图
     pod 'TencentMap-SDK'
-    pod 'WechatOpenSDK',          '1.8.6.2'
+    pod 'Charts'
 
     pod 'Hero'
+
+    pod 'mob_sharesdk'
+    pod 'mob_sharesdk/ShareSDKUI'
+    pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+    pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+    pod 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+    pod 'mob_sharesdk/ShareSDKPlatforms/AliPaySocial'
+    pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'
+    pod 'mob_sharesdk/ShareSDKPlatforms/SMS'
+    pod 'mob_sharesdk/ShareSDKConfigFile'
+    pod 'mob_sharesdk/ShareSDKExtension'
 
 end
 
